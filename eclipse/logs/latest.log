@@ -1,0 +1,23 @@
+[21:22:25] [main/INFO]: Setting user: Player281
+[21:22:26] [Client thread/INFO]: LWJGL Version: 2.9.0
+[21:22:29] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MapWriter
+[21:22:30] [Sound Library Loader/INFO]: Sound engine started
+[21:22:31] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:22:31] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[21:22:32] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[21:22:43] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[21:22:43] [Server thread/INFO]: Generating keypair
+[21:22:43] [Server thread/INFO]: Preparing start region for level 0
+[21:22:44] [Server thread/INFO]: Player281[local:E:1d26f32e] logged in with entity id 365 at (236.61832952458087, 61.604913288260654, 215.65449122493118)
+[21:22:44] [Server thread/INFO]: Player281 joined the game
+[21:23:07] [Server thread/INFO]: Saving and pausing game...
+[21:23:07] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:23:07] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:23:07] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:23:08] [Server thread/INFO]: Stopping server
+[21:23:08] [Server thread/INFO]: Saving players
+[21:23:08] [Server thread/INFO]: Saving worlds
+[21:23:08] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:23:08] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:23:08] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:23:09] [Client thread/INFO]: Stopping!

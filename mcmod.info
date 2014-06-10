@@ -1,0 +1,22 @@
+[
+{
+  "modid": "Boxes",
+  "name": "Boxes",
+  "description": "",
+  "version": "@VERSION@",
+  "mcversion": "@MCVERSION@",
+  "url": "",
+  "updateUrl": "",
+  "authors": [
+    "Matchlighter"
+  ],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+	"required-after:MLCore"
+  ]
+}
+]
