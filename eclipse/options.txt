@@ -70,6 +70,14 @@ key_key.hotbar.6:7
 key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
+key_key.mw_open_gui:50
+key_key.mw_new_marker:210
+key_key.mw_next_map_mode:49
+key_key.mw_next_marker_group:51
+key_key.mw_teleport:52
+key_key.mw_zoom_in:201
+key_key.mw_zoom_out:209
+key_key.mw_underground_mode:22
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0

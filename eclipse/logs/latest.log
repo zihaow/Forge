@@ -1,23 +1,25 @@
-[21:22:25] [main/INFO]: Setting user: Player281
-[21:22:26] [Client thread/INFO]: LWJGL Version: 2.9.0
-[21:22:29] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MapWriter
-[21:22:30] [Sound Library Loader/INFO]: Sound engine started
-[21:22:31] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[21:22:31] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[21:22:32] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
-[21:22:43] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
-[21:22:43] [Server thread/INFO]: Generating keypair
-[21:22:43] [Server thread/INFO]: Preparing start region for level 0
-[21:22:44] [Server thread/INFO]: Player281[local:E:1d26f32e] logged in with entity id 365 at (236.61832952458087, 61.604913288260654, 215.65449122493118)
-[21:22:44] [Server thread/INFO]: Player281 joined the game
-[21:23:07] [Server thread/INFO]: Saving and pausing game...
-[21:23:07] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[21:23:07] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[21:23:07] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[21:23:08] [Server thread/INFO]: Stopping server
-[21:23:08] [Server thread/INFO]: Saving players
-[21:23:08] [Server thread/INFO]: Saving worlds
-[21:23:08] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[21:23:08] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[21:23:08] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[21:23:09] [Client thread/INFO]: Stopping!
+[17:58:11] [main/INFO]: Setting user: Player782
+[17:58:13] [Client thread/INFO]: LWJGL Version: 2.9.0
+[17:58:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MapWriter
+[17:58:17] [Sound Library Loader/INFO]: Sound engine started
+[17:58:19] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[17:58:20] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:58:21] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[17:58:31] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[17:58:31] [Server thread/INFO]: Generating keypair
+[17:58:31] [Server thread/INFO]: Preparing start region for level 0
+[17:58:32] [Server thread/INFO]: Player782[local:E:c015761e] logged in with entity id 37 at (975.1331972080186, 118.0, -250.30000001192093)
+[17:58:32] [Server thread/INFO]: Player782 joined the game
+[18:00:26] [Server thread/INFO]: Player782 has just earned the achievement [Taking Inventory]
+[18:00:26] [Client thread/INFO]: [CHAT] Player782 has just earned the achievement [Taking Inventory]
+[18:05:08] [Server thread/INFO]: Saving and pausing game...
+[18:05:08] [Server thread/INFO]: Saving chunks for level 'Rivendell_Imladris_Divici'/Overworld
+[18:05:08] [Server thread/INFO]: Saving chunks for level 'Rivendell_Imladris_Divici'/Nether
+[18:05:08] [Server thread/INFO]: Saving chunks for level 'Rivendell_Imladris_Divici'/The End
+[18:05:10] [Server thread/INFO]: Stopping server
+[18:05:10] [Server thread/INFO]: Saving players
+[18:05:10] [Server thread/INFO]: Saving worlds
+[18:05:10] [Server thread/INFO]: Saving chunks for level 'Rivendell_Imladris_Divici'/Overworld
+[18:05:10] [Server thread/INFO]: Saving chunks for level 'Rivendell_Imladris_Divici'/Nether
+[18:05:10] [Server thread/INFO]: Saving chunks for level 'Rivendell_Imladris_Divici'/The End
+[18:05:12] [Client thread/INFO]: Stopping!
