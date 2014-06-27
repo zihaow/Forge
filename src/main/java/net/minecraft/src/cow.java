@@ -9,8 +9,8 @@ public abstract class cow extends EntityAnimal
     public cow(World world)
     {
         super(world);
-        //texture = "/mob/example.png";
-        setSize(0.9F, 1.3F);
+        texture = "/mob/cow.png";
+        setSize(1.0F, 1.5F);
     }
 
     public void writeEntityToNBT(NBTTagCompound nbttagcompound)
@@ -25,22 +25,22 @@ public abstract class cow extends EntityAnimal
 
     protected String getLivingSound()
     {
-        return "mob.example";
+        return "mob.cow”;
     }
 
     protected String getHurtSound()
     {
-        return "mob.example";
+        return "mob.cow”;
     }
 
     protected String getDeathSound()
     {
-        return "mob.example";
+        return "mob.cow”;
     }
 
     protected float getSoundVolume()
     {
-        return 0.4F;
+        return 0.5F;
     }
 
     protected int getDropItemId()
