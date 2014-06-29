@@ -1,4 +1,4 @@
-package zihaow.GiantItems;
+package zihaow.GiantItems.Client;
 
 import static org.junit.Assert.*;
 
@@ -7,7 +7,7 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
+import zihaow.GiantItems.GiantItems;
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.common.registry.GameData;
 import net.minecraft.item.Item;
@@ -15,7 +15,7 @@ import net.minecraft.world.World;
 
 /**
  ZihaowCP class, to test the ClientProxy 
- class under zihaow.GiantItems package 
+ class under zihaow.GiantItems.Client package 
  @author: Zihao Wu.
 */
 
