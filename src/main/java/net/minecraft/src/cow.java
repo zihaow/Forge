@@ -4,47 +4,45 @@ import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
 
+/**
+ The cow class has a cow's basic features. 
+  @author: Zihao Wu.
+  version = "1.0". 
+*/
+
 public abstract class cow extends EntityAnimal
 {
-    public cow(World world)
-    {
+	//Constructor to set the cow.
+    public cow(World world){
         super(world);
-        texture = "/mob/cow.png";
-        setSize(1.0F, 1.5F);
+        setSize(0.9F, 1.3F);
     }
 
-    public void writeEntityToNBT(NBTTagCompound nbttagcompound)
-    {
+    public void writeEntityToNBT(NBTTagCompound nbttagcompound){
         super.writeEntityToNBT(nbttagcompound);
     }
 
-    public void readEntityFromNBT(NBTTagCompound nbttagcompound)
-    {
+    public void readEntityFromNBT(NBTTagCompound nbttagcompound){
         super.readEntityFromNBT(nbttagcompound);
     }
 
-    protected String getLivingSound()
-    {
-        return "mob.cow”;
+    protected String getLivingSound(){
+        return "mob.cow";
     }
 
-    protected String getHurtSound()
-    {
-        return "mob.cow”;
+    protected String getHurtSound(){
+        return "mob.cow";
     }
 
-    protected String getDeathSound()
-    {
-        return "mob.cow”;
+    protected String getDeathSound(){
+        return "mob.cow";
     }
 
-    protected float getSoundVolume()
-    {
-        return 0.5F;
+    protected float getSoundVolume(){
+        return 0.8F;
     }
 
-    protected int getDropItemId()
-    {
+    protected int getDropItemId(){
         return 0;
     }
 }

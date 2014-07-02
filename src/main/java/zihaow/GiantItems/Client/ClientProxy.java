@@ -8,11 +8,9 @@ import net.minecraft.world.World;
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.common.registry.GameData;
 
-public class ClientProxy extends CommonProxy
-{
+public class ClientProxy extends CommonProxy{
 	@Override
-	public void registerClientInformation()
-	{
+	public void registerClientInformation(){
 		Item item = null;
 		int i=0;
 		for(i=0;i<GiantItems.ItemIDs.length;i++){
@@ -25,8 +23,7 @@ public class ClientProxy extends CommonProxy
 	}
 	
 	@Override
-	public World getClientWorld()
-	{
+	public World getClientWorld(){
 		return FMLClientHandler.instance().getClient().theWorld;
 	}
 }
