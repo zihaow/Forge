@@ -11,13 +11,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.common.config.Configuration;
 
-/**
- ZihaowG class, to test the GiantItems class
- under zihaow.GiantItems package.
- @author: Zihao Wu.
- */
-
-public class ZihaowG{
+public class ZihaowG {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception{
@@ -40,7 +34,6 @@ public class ZihaowG{
 	}
 
 	@Test
-	//written to test the preInit(FMLPreInitializationEvent event) method.
 	public void testConfig(FMLPreInitializationEvent event){
 		Configuration config1 = new Configuration(event.getSuggestedConfigurationFile());
 		if(config1 instanceof Configuration)
@@ -50,7 +43,6 @@ public class ZihaowG{
 	}
 	
 	@Test
-	//written to test the load(FMLInitializationEvent event) method.
 	public void testEvent(){
 		FMLInitializationEvent event1 = new FMLInitializationEvent();
 		if(event1 instanceof FMLInitializationEvent)
@@ -58,4 +50,5 @@ public class ZihaowG{
 		else
 			System.out.println("Fail to event FMLinitialization.");
 	}
+
 }
