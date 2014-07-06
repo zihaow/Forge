@@ -14,9 +14,9 @@ import net.minecraft.item.Item;
 import net.minecraft.world.World;
 
 /**
- ZihaowCP class, to test the ClientProxy 
- class under zihaow.GiantItems.Client package 
- @author: Zihao Wu.
+ * ZihaowCP class, to test the ClientProxy 
+   class under zihaow.GiantItems.Client package 
+ * @author: Zihao Wu.
 */
 
 public class ZihaowCP {
@@ -42,7 +42,9 @@ public class ZihaowCP {
 	}
 
 	@Test
-	//to test the registerClientInformation() method.
+	/**
+	 * to test the registerClientInformation() method.
+	*/
 	public void testRegisterClientInformation(){
 		Item i1= new Item();
 		for(int i=0;i<GiantItems.ItemIDs.length;i++){
@@ -51,8 +53,10 @@ public class ZihaowCP {
 	}
 	
 	@Test
-	//to test the getClientWorld() method.
-    public void testGetClientWorld(){
+	/**
+	 * to test the getClientWorld() method.
+	*/
+        public void testGetClientWorld(){
 		World w = null;
 		assertEquals(w,FMLClientHandler.instance().getClient().theWorld);
 	}
