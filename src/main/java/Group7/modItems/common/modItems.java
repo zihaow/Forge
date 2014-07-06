@@ -14,10 +14,10 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 	/**
- 	modItems class, which is the main class for our mod items.
- 	@Author: Zihao Wu, Xuefei Yang, 
- 		  	 James MacNeil, Yuanjing Lin,
- 		  	 Alireza Afkari.
+ 	  * modItems class, which is the main class for our mod items.
+ 	  * @Author: Zihao Wu, Xuefei Yang, 
+ 		     James MacNeil, Yuanjing Lin,
+ 		     Alireza Afkari.
 	*/
 
 @Mod(modid="modItems", name="modItems",version="1.0a")
