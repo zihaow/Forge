@@ -1,6 +1,6 @@
 CSCI 3130 Group 7
 
-Only /src, /eclipse, and /config, /texture under eclipse folders are necessary for our Minecraft Forge.
+Only /src, /eclipse, /config, /assets and /texture under eclipse folders are necessary for our Minecraft Forge.
 
 So simply copy these folders to a installed Minecraft Forge then it can be run successfully.
 
