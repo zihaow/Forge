@@ -8,6 +8,11 @@ import net.minecraft.world.World;
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.common.registry.GameData;
 
+/**
+ * ClientProxy class, to handle user's input and then register item info.
+ * @author: Zihao Wu.
+*/
+
 public class ClientProxy extends CommonProxy{
 	@Override
 	public void registerClientInformation(){
