@@ -4,6 +4,11 @@ import cpw.mods.fml.common.network.IGuiHandler;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 
+/**
+ * CommonProxy class, to make modItems mod working on Minecraft.
+ * @author: Zihao Wu.
+*/
+
 public class CommonProxy implements IGuiHandler{
 	public void registerRenderInformation(){}
 	public void registerRenderThings(){}
