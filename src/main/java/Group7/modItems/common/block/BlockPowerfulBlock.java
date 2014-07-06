@@ -8,10 +8,11 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 
 	/**
-	@author: Zihao Wu, Xuefei Yang, 
-		     James MacNeil, Yuanjing Lin,
-		     Alireza Afkari.
-	 */	
+	 BlockPowerful class, 
+         @author: Zihao Wu, Xuefei Yang, 
+		  James MacNeil, Yuanjing Lin,
+		  Alireza Afkari.
+        */	
 
 public class BlockPowerfulBlock extends Block{
 	
