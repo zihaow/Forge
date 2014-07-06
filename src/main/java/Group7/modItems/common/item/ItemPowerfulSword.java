@@ -14,9 +14,10 @@ import net.minecraft.item.ItemSword;
 import net.minecraft.world.World;
 
 	 /**
-		@author: Zihao Wu, Xuefei Yang, 
- 				 James MacNeil, Yuanjing Lin,
- 				 Alireza Afkari.
+	  ItemPowerfulSword class,
+          @author: Zihao Wu, Xuefei Yang, 
+ 	  James MacNeil, Yuanjing Lin,
+	  Alireza Afkari.
 	 */	 
 
 	 public class ItemPowerfulSword extends ItemSword{
