@@ -14,9 +14,9 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
- ZihaowGR class, to test the GiantItemRenderer class under
- zihaow.GiantItems.Client package.
- @author Zihao Wu.
+ * ZihaowGR class, to test the GiantItemRenderer class under
+   zihaow.GiantItems.Client package.
+ * @author Zihao Wu.
 */
 
 public class ZihaowGR{
@@ -44,7 +44,9 @@ public class ZihaowGR{
 	}
 
 	@Test
-	//to test the handleRenderType method.
+	/**
+	 * to test the handleRenderType method.
+	*/
 	public void testHandleRenderType(){
 		ItemRenderType t1 = ItemRenderType.EQUIPPED;
 		ItemRenderType t2 = ItemRenderType.EQUIPPED_FIRST_PERSON;
@@ -53,14 +55,18 @@ public class ZihaowGR{
 	}
 	
 	@Test
-	//to test the shouldUseRenderHelper method.
+	/**
+	 * to test the shouldUseRenderHelper method.
+	*/
 	public void testShouldUseRenderHelper(){
 		ItemRendererHelper h = ItemRendererHelper.EQUIPPED_BLOCK;
 		assertSame(h,ItemRendererHelper.EQUIPPED_BLOCK);
 	}
 	
 	@Test
-	//to test the renderBigItem method.
+	/**
+	 * to test the renderBigItem method.
+	*/
 	public void testRenderBigItem(){
 		Minecraft mc1 = Minecraft.getMinecraft();
 		assertSame(mc1,Minecraft.getMinecraft());
