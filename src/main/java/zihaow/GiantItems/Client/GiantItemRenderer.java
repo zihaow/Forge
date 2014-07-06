@@ -17,6 +17,11 @@ import zihaow.GiantItems.GiantItems;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
+/**
+ * GiantItemRenderer class, to render items uers want to make it giant.
+ * @author: Zihao Wu.
+*/
+
 @SideOnly(Side.CLIENT)
 public class GiantItemRenderer implements IItemRenderer{
 	private Minecraft mc;
