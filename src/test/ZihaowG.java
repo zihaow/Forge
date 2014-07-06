@@ -11,6 +11,11 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.common.config.Configuration;
 
+/**
+ * ZihaoG class, used to test the GiantItems class under zihaow package.
+ * @author: Zihao Wu.
+*/
+
 public class ZihaowG {
 
 	@BeforeClass
