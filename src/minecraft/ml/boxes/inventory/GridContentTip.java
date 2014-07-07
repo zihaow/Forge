@@ -23,11 +23,12 @@ public class GridContentTip extends ContentTip {
 	protected static Vector2i gridDimensions;
 	private static List<ItemStack> contentStacks = new ArrayList<ItemStack>();
 	
+	//create the GridContentTip
 	public GridContentTip(Slot slt, Rectangle gcRect) {
 		super(slt, gcRect);
-		
 	}
 
+	//Preview the render
 	@Override
 	protected void renderPreview(Minecraft mc, int mx, int my) {
 		for (int i=0; i<contentStacks.size(); i++){
@@ -42,6 +43,7 @@ public class GridContentTip extends ContentTip {
 		}
 	}
 
+	//draw Minecraft for display
 	@Override
 	protected void renderIteractable(Minecraft mc, int mx, int my) {
 		for (int i=0; i<contentStacks.size(); i++){
@@ -67,12 +69,14 @@ public class GridContentTip extends ContentTip {
 		}
 	}
 	
+	//draw the background
 	@Override
 	protected void renderBackground(Minecraft mc, int mx, int my) {
 		mc.getTextureManager().bindTexture(tipBgRes);
 		GuiRenderUtils.drawSlicedRect(0, 0, tipBounds.width, tipBounds.height, 0, 0, 178, 106, 9, 9, 7, 7);
 	}
 	
+	//refresh the Minecraft display page
 	@Override
 	public void tick(Minecraft mc) {
 		ItemBoxContainer iib = getIIB();
@@ -106,6 +110,7 @@ public class GridContentTip extends ContentTip {
 		super.tick(mc);
 	}
 
+	//get the slot
 	@Override
 	public int getSlotAtPosition(int pX, int pY) {
 		if (interacting && renderContents){
