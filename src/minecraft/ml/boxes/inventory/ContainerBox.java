@@ -18,6 +18,7 @@ public class ContainerBox extends Container {
 	public final IBoxContainer box;
 	public final EntityPlayer player;
 
+	//Create Continer and add all slot to the continer 
 	public ContainerBox(IBoxContainer box, EntityPlayer pl) {
 		this.box = box;
 		this.player = pl;
@@ -41,11 +42,13 @@ public class ContainerBox extends Container {
 		}
 	}
 
+	//Check the player entity to see if it can interact  
 	@Override
 	public boolean canInteractWith(EntityPlayer var1) {
 		return box.boxUseableByPlayer(var1) && (!(box instanceof ItemBoxContainer) || ((ItemBoxContainer)box).stack == var1.getCurrentEquippedItem());
 	}
 
+	//action need to be done while a particular slot clicked 
 	@Override
 	public ItemStack slotClick(int slotNum, int mouseBtn, int action,
 			EntityPlayer par4EntityPlayer) {
@@ -58,6 +61,7 @@ public class ContainerBox extends Container {
 		return ret;
 	}
 
+	//move the stack from particular slot
 	@Override
 	public ItemStack transferStackInSlot(EntityPlayer par1EntityPlayer, int par2) {
 		ItemStack var3 = null;
@@ -84,13 +88,15 @@ public class ContainerBox extends Container {
 		return var3;
 	}
 
+	//action need to be taken when continer closed 
 	@Override
 	public void onContainerClosed(EntityPlayer par1EntityPlayer) {
 		super.onContainerClosed(par1EntityPlayer);
 		save(par1EntityPlayer);
 		box.boxClose();
 	}
-
+	
+	//save the entity of palyer 
 	private void save(EntityPlayer pl){
 		if (!pl.worldObj.isRemote){
 			box.saveData();
