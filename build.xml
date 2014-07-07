@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
-<!-- @author: Zihao Wu, Xuefei yangddddvvv
+<!-- @author: Zihao Wu, Xuefei Yang -->
+
 <project basedir="." default="build" name="Minecraft">
     <property environment="env"/>
     <property name="ECLIPSE_HOME" value="F:/Eclipse/eclipse"/>
