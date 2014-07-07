@@ -31,15 +31,19 @@ public class UndergroundTexture extends Texture {
 	class RenderChunk implements IChunk {
 		Chunk chunk;
 		
+		//create the render chunk
 		public RenderChunk(Chunk chunk) {
 			this.chunk = chunk;
 		}
 		
+		//return the maximum hight
 		@Override
 		public int getMaxY() {
 			return this.chunk.getTopFilledSegment() + 15;
 		}
 		
+		
+		//return the meta or block based on posation
 		@Override
 		public int getBlockAndMetadata(int x, int y, int z) {
 			Block block = this.chunk.getBlock(x, y, z);
@@ -48,16 +52,19 @@ public class UndergroundTexture extends Texture {
 			return ((blockid & 0xfff) << 4) | (meta & 0xf);
 		}
 
+		//get the cemo on the posation
 		@Override
 		public int getBiome(int x, int z) {
 			return (int) this.chunk.getBiomeArray()[(z * 16) + x];
 		}
 
+		// get the ligh value
 		@Override
 		public int getLightValue(int x, int y, int z) {
 			return this.chunk.getBlockLightValue(x, y, z, 0);
 		}
 	}
+	
 	
 	public UndergroundTexture(Mw mw, int textureSize, boolean linearScaling) {	
 		super(textureSize, textureSize, 0x00000000, GL11.GL_NEAREST, GL11.GL_NEAREST, GL11.GL_REPEAT);
@@ -70,11 +77,13 @@ public class UndergroundTexture extends Texture {
 		this.mw = mw;
 	}
 	
+	//refresh the page
 	public void clear() {
 		Arrays.fill(this.pixels, 0xff000000);
 		this.updateTexture();
 	}
 	
+	////remove all pixels from chunk
 	public void clearChunkPixels(int cx, int cz) {
 		int tx = (cx << 4) & (this.textureSize - 1);
 		int tz = (cz << 4) & (this.textureSize - 1);
@@ -85,6 +94,7 @@ public class UndergroundTexture extends Texture {
 		this.updateTextureArea(tx, tz, 16, 16);
 	}
 	
+	//update the texture
 	void renderToTexture(int y) {
 		this.setPixelBufPosition(0);
 		for (int i = 0; i < this.pixels.length; i++) {
@@ -99,12 +109,14 @@ public class UndergroundTexture extends Texture {
 		this.updateTexture();
 	}
 	
+	//get the loaded chunk
 	public int getLoadedChunkOffset(int cx, int cz) {
 		int cxOffset = cx & (this.textureChunks - 1);
 		int czOffset = cz & (this.textureChunks - 1);
 		return (czOffset * this.textureChunks) + cxOffset;
 	}
 	
+	//creaye the view
 	public void requestView(MapView view) {
 		int cxMin = ((int) view.getMinX()) >> 4;
 		int czMin = ((int) view.getMinZ()) >> 4;
@@ -123,6 +135,7 @@ public class UndergroundTexture extends Texture {
 		}
 	} 
 	
+	//check if chubk is in texture
 	public boolean isChunkInTexture(int cx, int cz) {
 		Point requestedChunk = new Point(cx, cz);
 		int offset = this.getLoadedChunkOffset(cx, cz);
@@ -130,6 +143,7 @@ public class UndergroundTexture extends Texture {
 		return (chunk != null) && chunk.equals(requestedChunk);
 	}
 	
+	//update under ground texture posation
 	public void update() {
 		this.clearFlags();
 		
@@ -176,12 +190,14 @@ public class UndergroundTexture extends Texture {
 		this.renderToTexture(this.py + 1);
 	}
 	
+	//remove flags
 	private void clearFlags() {
 		for (byte[] chunkFlags : this.updateFlags) {
 			Arrays.fill(chunkFlags, ChunkRender.FLAG_UNPROCESSED);
 		}
 	}
 	
+	//process the block on the provided posation
 	private void processBlock(int xi, int y, int zi) {
 		int x = (this.updateX << 4) + xi;
 		int z = (this.updateZ << 4) + zi;
