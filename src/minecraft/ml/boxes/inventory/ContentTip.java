@@ -44,6 +44,7 @@ public abstract class ContentTip {
 		origStack = boxSlot.getStack();
 	}
 
+	//move the Minecraft to refresh the page "based on time"
 	@SideOnly(Side.CLIENT)
 	public void tick(Minecraft mc){
 
@@ -75,6 +76,7 @@ public abstract class ContentTip {
 		}
 	}
 
+	//refresh the render based on the posation
 	@SideOnly(Side.CLIENT)
 	public void renderTick(Minecraft mc, int mx, int my){
 		hvrSltIndex = getSlotAtPosition(mx, my);
@@ -109,6 +111,7 @@ public abstract class ContentTip {
 	@SideOnly(Side.CLIENT)
 	protected abstract void renderBackground(Minecraft mc, int mx, int my);
 
+	//refresh the display based on the mouse location
 	@SideOnly(Side.CLIENT)
 	public boolean handleMouseClick(int mx, int my, int btn){
 		Minecraft mc = FMLClientHandler.instance().getClient();
@@ -123,6 +126,7 @@ public abstract class ContentTip {
 		return false;
 	}
 
+	//refresh the diplay based on the keyboard
 	@SideOnly(Side.CLIENT)
 	public boolean handleKeyPress(char chr, int kc){
 		Minecraft mc = FMLClientHandler.instance().getClient();
@@ -143,6 +147,7 @@ public abstract class ContentTip {
 		return false;
 	}
 
+	//refresh the screen based on the client click
 	@SideOnly(Side.CLIENT)
 	protected ItemStack clientSlotClick(Minecraft mc, int slotNum, int arg, int action, EntityPlayer par4EntityPlayer){
 		ItemStack ret = slotClick(slotNum, arg, action, par4EntityPlayer);
@@ -154,6 +159,7 @@ public abstract class ContentTip {
 		return ret;
 	}
 
+	//validate the display movment
 	public boolean revalidate(int mx, int my){
 		GuiScreen oc = FMLClientHandler.instance().getClient().currentScreen;
 		return oc instanceof GuiContainer &&
@@ -164,12 +170,15 @@ public abstract class ContentTip {
 						) && (interacting || getIIB().getBox().canOpenContentPreview());
 	}
 
+	//get item box
 	protected ItemBoxContainer getIIB(){
 		return new ItemBoxContainer(boxSlot.getStack());
 	}
 
+	//get the slot
 	public abstract int getSlotAtPosition(int pX, int pY);
 
+	////get the stack
 	public ItemStack getStackAtPosition(int pX, int pY){
 		int sltNum = getSlotAtPosition(pX, pY);
 		Box bd = getIIB().getBox();
@@ -179,6 +188,7 @@ public abstract class ContentTip {
 		return null;
 	}
 
+	//check if a particular point is in the tip 
 	public boolean isPointInTip(int pX, int pY){
 		return tipBounds.isPointInside(pX, pY);
 	}
@@ -190,6 +200,7 @@ public abstract class ContentTip {
 		}
 	};
 	
+	//action need to be taken when a slot been clicked
 	public ItemStack slotClick(int slotNum, int arg, int action, EntityPlayer par4EntityPlayer) {
 		if (action == 1) return null;
 		
