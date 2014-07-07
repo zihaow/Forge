@@ -37,6 +37,9 @@ import net.minecraft.world.World;
 	     this.setCreativeTab(CreativeTabs.tabTools);
 	 }
 		
+	 /**
+	  * a void method for set a powerfulSword resource
+	  */
 	 @SideOnly(Side.CLIENT)
 	 public void registerIcons(IIconRegister par1IconRegister){
     	 itemIcon = par1IconRegister.registerIcon("modItems:PowerfulSword");

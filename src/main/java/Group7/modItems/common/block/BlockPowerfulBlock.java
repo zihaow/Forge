@@ -28,6 +28,10 @@ public class BlockPowerfulBlock extends Block{
 		this.setLightLevel(5.0F);
 	}
 	
+	/**
+	 * a void method for set required register icons into the game
+	 * @param par1IconRegister
+	 */
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IIconRegister par1IconRegister){
 		blockIcon = par1IconRegister.registerIcon("modItems:PowerfulBlock");

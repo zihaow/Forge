@@ -5,7 +5,6 @@
  */
 
 package com.kbg.VariousSizeBlock;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -13,7 +12,11 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
-
+/**
+ * this is a java class named basic class for create a basic model of resource on this game
+ * @author yuanjianglin
+ *
+ */
 @Mod(modid = Basic.MODID, version = Basic.VERSION)
 public class Basic {
 	public static final String MODID = "basic";

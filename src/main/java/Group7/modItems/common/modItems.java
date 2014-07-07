@@ -24,6 +24,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 public class modItems{
 	
+	//aggregation
 	@Instance("modItems")
 	public static modItems instance;
 	
@@ -33,10 +34,18 @@ public class modItems{
 	public static Block PowerfulBlock;
 	public static Item PowerfulSword;
 	
+	/**
+	 * a void method for set pre-initialization event
+	 * @param event
+	 */
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event){
 	}
 	
+	/**
+	 * a void method for set FML initialization event
+	 * @param event
+	 */
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event){
 		PowerfulSword = new ItemPowerfulSword(ToolMaterial.GOLD).setUnlocalizedName("PowerfulSword");
@@ -45,6 +54,10 @@ public class modItems{
 		GameRegistry.registerItem(PowerfulSword,"PowerfulSword");
 	}
 	
+	/**
+	 * a method that set necessary initialization event on this
+	 * @param event
+	 */
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event){
 	}
