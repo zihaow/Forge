@@ -12,6 +12,7 @@ public class ContainerDisplayCase extends Container {
 
 	protected TileEntityDisplayCase tedc;
 	
+	//add player entity to the container for display 
 	public ContainerDisplayCase(TileEntityDisplayCase tedc, EntityPlayer pl) {
 		this.tedc = tedc;
 		
@@ -29,11 +30,13 @@ public class ContainerDisplayCase extends Container {
 		}
 	}
 	
+	//give the access the player to interact
 	@Override
 	public boolean canInteractWith(EntityPlayer entityplayer) {
 		return true;
 	}
 	
+	//move the slot
 	@Override
 	public ItemStack transferStackInSlot(EntityPlayer par1EntityPlayer, int par2) {
 		ItemStack itemstack = null;
