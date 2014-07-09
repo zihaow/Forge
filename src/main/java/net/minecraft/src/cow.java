@@ -33,15 +33,15 @@ public abstract class cow extends EntityAnimal
     }
 
     protected String getLivingSound(){
-        return "mob.cow";
+        return "textures.cow";
     }
 
     protected String getHurtSound(){
-        return "mob.cow";
+        return "textures.cow";
     }
 
     protected String getDeathSound(){
-        return "mob.cow";
+        return "textures.cow";
     }
 
     protected float getSoundVolume(){
