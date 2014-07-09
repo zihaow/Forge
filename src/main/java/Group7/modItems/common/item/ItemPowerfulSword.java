@@ -22,19 +22,19 @@ import net.minecraft.world.World;
 
 	 public class ItemPowerfulSword extends ItemSword{
 		private float field_150934_a;
-	    private final Item.ToolMaterial field_150933_b;
+	        private final Item.ToolMaterial field_150933_b;
 	    
 	 /**
 	 Constructor to set the feature of this powerful sword.
 	 */
 	 public ItemPowerfulSword(Item.ToolMaterial p_i45356_1_){
-		 super(ToolMaterial.GOLD);
-		 this.field_150933_b = p_i45356_1_;
-	     this.maxStackSize = 2;
-	     this.setMaxDamage(p_i45356_1_.getMaxUses());
-	     this.setCreativeTab(CreativeTabs.tabCombat);
-	     this.field_150934_a = 12.0F + p_i45356_1_.getDamageVsEntity();
-	     this.setCreativeTab(CreativeTabs.tabTools);
+	 	super(ToolMaterial.GOLD);
+		this.field_150933_b = p_i45356_1_;
+	        this.maxStackSize = 2;
+	        this.setMaxDamage(1500);
+	        this.setCreativeTab(CreativeTabs.tabCombat);
+	        this.field_150934_a = 12.0F + p_i45356_1_.getDamageVsEntity();
+	        this.setCreativeTab(CreativeTabs.tabTools);
 	 }
 		
 	 /**
@@ -42,6 +42,11 @@ import net.minecraft.world.World;
 	  */
 	 @SideOnly(Side.CLIENT)
 	 public void registerIcons(IIconRegister par1IconRegister){
-    	 itemIcon = par1IconRegister.registerIcon("modItems:PowerfulSword");
-     }
+    	 	itemIcon = par1IconRegister.registerIcon("modItems:PowerfulSword");
+         }
+         
+         @Override
+         public int getMaxItemUseDuration(ItemStack par1ItemStack){
+		 return 85000;
+	 }
 }
