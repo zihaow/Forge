@@ -12,9 +12,15 @@ import net.minecraft.world.World;
 
 public abstract class cow extends EntityAnimal
 {
-	//Constructor to set the cow.
+    
+    /**
+     * Constructor to set the cow.
+     * @param world
+     * @param cowTextures 
+    */
     public cow(World world){
         super(world);
+        cowTextures = new ResourceLocation("textures/cow.png");
         setSize(0.9F, 1.3F);
     }
 
