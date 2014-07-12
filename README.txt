@@ -39,5 +39,7 @@ texture folder, which contains NPCs’ images that we want to make it look like.
 
 assets folder, which includes our modItems mods' textures,e.g. blocks, items, etc.
 
+Ant file is located in /build.xml
+
 —————————————————————————————————————
 
