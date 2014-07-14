@@ -8,6 +8,11 @@ import net.minecraft.client.Minecraft;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType;
 
+/**
+ * Clock class to inilitize the timer.
+ * @author: Zihao Wu, James MacNeil.
+*/
+
 public class Clock{
 	
 	private boolean displayTime = false;
