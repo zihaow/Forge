@@ -4,7 +4,7 @@ import net.minecraft.block.material.Material;
 
 /**
  * this is a class named BasicBlock which derived from Block class for create some basic block resources in this game
- * @author yuanjianglin
+ * @author XueFei Yang, yuanjianglin
  *
  */
 

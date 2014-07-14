@@ -14,14 +14,14 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 /**
  * this is a java class named basic class for create a basic model of resource on this game
- * @author yuanjianglin
+ * @author XueFei Yang, yuanjianglin
  *
  */
 @Mod(modid = Basic.MODID, version = Basic.VERSION)
 public class Basic {
 	public static final String MODID = "basic";
 	public static final String VERSION = "1.0";
-	public static Block basicBlock = new BasicBlock(Material.rock).setCreativeTab(CreativeTabs.tabBlock).setBlockName("basicBlock").setLightLevel(1.0f);
+	public static Block basicBlock = new BasicBlock(Material.rock).setCreativeTab(CreativeTabs.tabBlock).setBlockName("basicBlock").setLightLevel(1.0f).setBlockTextureName(MODID+":newBlock");
 	
 	@EventHandler
 	public void preInit(FMLInitializationEvent event){
