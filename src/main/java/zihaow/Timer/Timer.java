@@ -34,7 +34,8 @@ public class Timer{
 	}
 	
 	@Mod.EventHandler
-	public void init(FMLInitializationEvent event){}
+	public void init(FMLInitializationEvent event){
+	}
 	
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event){
