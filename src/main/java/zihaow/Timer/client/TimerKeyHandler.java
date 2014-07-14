@@ -10,11 +10,13 @@ public class TimerKeyHandler extends ClientRegistry {
 
 	private Timer timer;
 
+	//constrcutor
 	public TimerKeyHandler(KeyBinding[] bindings, boolean[] repeats, Timer timer) {
 		super();
 		this.timer = timer;
 	}
 	
+	@Override
 	public String getLabel(){
 	    return "TimerKey";
 	}
