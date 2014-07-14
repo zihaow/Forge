@@ -28,6 +28,8 @@ modItems mod, which contains our mod specific items we have now and in the futur
 
 Giantitem mod, which makes items giant. //Contains junit test cases for this mod.
 
+Timer mod, which limits player's time usage to reach the top of the mountain.
+
 Folder Info
 —————————————————————————————————————
 
