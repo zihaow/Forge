@@ -6,6 +6,7 @@ import net.minecraft.client.settings.KeyBinding;
 import cpw.mods.fml.client.registry.ClientRegistry;
 
 public class ClientProxy {
+	
 	public void registerTimer(Timer timer){
 		KeyBinding[] bindings = { new KeyBinding("Toggle Stopwatch", Keyboard.KEY_APOSTROPHE, "Toggle Stopwatch"),
 				  				  new KeyBinding("Reset Stopwatch", Keyboard.KEY_SEMICOLON, "Reset Stopwatch")};
