@@ -12,6 +12,11 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid="mobs",version="1.0a")
 
+/**
+ * Mobs is the main class of entities.
+ * @author: Zihao Wu, Xuefei Yang.
+*/
+
 public class Mobs {
 	
 	public static final String modId = "mob";
