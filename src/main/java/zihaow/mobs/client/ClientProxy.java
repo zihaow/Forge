@@ -10,8 +10,8 @@ import zihaow.mobs.model.ModelWolverine;
 import zihaow.mobs.render.RenderCrazyCow;
 import zihaow.mobs.render.RenderWolverine;
 import zihaow.mobs.common.CommonProxy;
-import zihaow.mobs.entity.CrazyCow;
 import zihaow.mobs.entity.Wolverine;
+import zihaow.mobs.entity.CrazyCow;
 
 public class ClientProxy extends CommonProxy{
 
