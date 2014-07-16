@@ -46,7 +46,7 @@ public class EntityHandler{
 		int subColor = random.nextInt()* 1677215;
 		
 		EntityRegistry.registerGlobalEntityID(entityClass, name, entityId);
-		EntityRegistry.addSpawn(entityClass, 100, 5, 10, EnumCreatureType.creature, BiomeGenBase.jungle);
+		EntityRegistry.addSpawn(entityClass, 100, 5, 10, EnumCreatureType.creature, BiomeGenBase.jungle, BiomeGenBase.beach);
 		EntityRegistry.registerModEntity(entityClass, name, entityId, Mobs.instance, 64, 1, true);
 	}
 
