@@ -13,7 +13,7 @@ import net.minecraft.entity.Entity;
 
 public class ModelCrazyCow extends ModelQuadruped{
 
-	//Constructors 
+    //Constructors 
     public ModelCrazyCow(){
         super(12, 0.0F);
         ModelBase m = null;
