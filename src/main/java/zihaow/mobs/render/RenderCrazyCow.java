@@ -19,7 +19,7 @@ import zihaow.mobs.model.ModelCrazyCow;
 
 public class RenderCrazyCow extends RenderLiving{
 	
-	/**
+    /**
     public RenderCow(ModelBase modelbase, float f){
         super(modelbase, f);
     }
