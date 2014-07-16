@@ -1,14 +1,16 @@
 package zihaow.mobs.handler;
 
 import java.util.Random;
-
 import net.minecraft.entity.EntityList;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.world.biome.BiomeGenBase;
 import zihaow.mobs.Mobs;
-
-
 import cpw.mods.fml.common.registry.EntityRegistry;
+
+/**
+ * EntityHandler class, to set up entities.
+ * @author: Zihao Wu, Xuefei Yang.
+*/
 
 public class EntityHandler{
 	
