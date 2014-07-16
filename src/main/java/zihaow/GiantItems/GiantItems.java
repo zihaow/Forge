@@ -8,8 +8,13 @@ import net.minecraftforge.common.config.Configuration;
 
 @Mod(modid="GiantItems", name="GiantItems", version="1.0a",dependencies="required-after:FML", useMetadata = true)
 
-public class GiantItems
-{
+/**
+ * GiantItems class is the main class for giant item mod.
+ * @author: Zihao Wu.
+ */
+
+public class GiantItems{
+	
 	@Mod.Instance("GiantItems")
 	public static GiantItems instance;
 	
