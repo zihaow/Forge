@@ -16,12 +16,10 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 
-	/**
- 	modItems class, which is the main class for our mod items.
- 	@Author: Zihao Wu, Xuefei Yang, 
- 		  	 James MacNeil, Yuanjing Lin,
- 		  	 Alireza Afkari.
-	*/
+/**
+ * mymod class, which is the main class for our mod items.
+ * @author: Zihao Wu, Xuefei Yang, 
+ */ 		  	 
 
 @Mod(modid=mymod.modid,version="1.0a")
 
