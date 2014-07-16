@@ -24,7 +24,7 @@ import net.minecraft.world.World;
  * The Wolverine class creates a wolf called wolverine
  * that is very aggressive and it will attack the player
  * no matter what
- * @author Zihao Wu
+ * @author Zihao Wu, Xuefei Yang.
  * Version = "1.0a".
  */
 
