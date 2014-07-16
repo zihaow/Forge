@@ -36,6 +36,7 @@ public class EntityHandler{
 		EntityRegistry.registerGlobalEntityID(entityClass, name, entityId);
 		EntityRegistry.addSpawn(entityClass, 50, 3, 8, EnumCreatureType.monster, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle);
 		EntityRegistry.registerModEntity(entityClass, name, entityId, Mobs.instance, 64, 1, true);
+		EntityList.entityEggs.put(Integer.valueOf(entityId), new EntityList.EntityEggInfo(entityId, mainColor, subColor));
 	}
 	
 	public static void registerFriendly(Class entityClass, String name){
@@ -48,6 +49,7 @@ public class EntityHandler{
 		EntityRegistry.registerGlobalEntityID(entityClass, name, entityId);
 		EntityRegistry.addSpawn(entityClass, 100, 5, 10, EnumCreatureType.creature, BiomeGenBase.jungle, BiomeGenBase.beach);
 		EntityRegistry.registerModEntity(entityClass, name, entityId, Mobs.instance, 64, 1, true);
+		EntityList.entityEggs.put(Integer.valueOf(entityId), new EntityList.EntityEggInfo(entityId, mainColor, subColor));
 	}
 
 }
