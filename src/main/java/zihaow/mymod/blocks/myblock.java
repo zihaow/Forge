@@ -9,11 +9,9 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 
-	/**
-	@author: Zihao Wu, Xuefei Yang, 
-		     James MacNeil, Yuanjing Lin,
-		     Alireza Afkari.
-	 */	
+/**
+ * @author: Zihao Wu, Xuefei Yang, 
+ */	
 
 public class myblock extends Block{
 	
