@@ -12,9 +12,9 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.common.config.Configuration;
 
 /**
- ZihaowG class, to test the GiantItems class
- under zihaow.GiantItems package.
- @author: Zihao Wu.
+ * ZihaowG class, to test the GiantItems class
+ * under zihaow.GiantItems package.
+ * @author: Zihao Wu.
  */
 
 public class ZihaowG{
