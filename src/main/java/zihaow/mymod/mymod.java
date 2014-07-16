@@ -1,7 +1,5 @@
 package zihaow.mymod;
 
-import zihaow.mymod.blocks.myblock;
-import zihaow.mymod.items.mysword;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -14,6 +12,8 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import zihaow.mymod.blocks.myblock;
+import zihaow.mymod.items.mysword;
 
 
 /**
