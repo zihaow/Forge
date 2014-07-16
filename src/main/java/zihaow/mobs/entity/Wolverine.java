@@ -30,12 +30,12 @@ import net.minecraft.world.World;
 
 public class Wolverine extends EntityWolf{
 
-	ResourceLocation cowTextures;
+	//ResourceLocation cowTextures;
 	
 	public Wolverine(World par1World){
 		super(par1World);
         this.setSize(1.0F, 1.2F);
-        cowTextures = new ResourceLocation("textures.wolverine.png");
+        //wolverineTextures = new ResourceLocation("textures.wolverine.png");
         this.getNavigator().setAvoidsWater(false);
         this.tasks.addTask(1, new EntityAISwimming(this));
         this.tasks.addTask(2, this.aiSit);
@@ -54,11 +54,18 @@ public class Wolverine extends EntityWolf{
         this.setTamed(false);
 	}
 	
+    protected void applyEntityArrtibute(){
+	super.applyEntityAttributes();
+	this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(30.0D);
+	this.getEntityAttribute(SharedMonsterAttributes.followRange).setBaseValue(50.0D);
+	this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(8.0D);
+	this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(6.7);
+    }
 	
-	/**
-	 To make the wolverine very aggressive.
-	 */
-	@Override
+    /**
+     *To make the wolverine very aggressive. 
+     */
+    @Override
     public void setAttackTarget(EntityLivingBase par1EntityLivingBase){
         super.setAttackTarget(par1EntityLivingBase);
         if (par1EntityLivingBase == null){
