@@ -2,7 +2,6 @@ package zihaow.mobs.common;
 
 //import cpw.mods.fml.client.registry.RenderingRegistry;
 //import cpw.mods.fml.common.network.IGuiHandler;
-//import net.minecraft.client.renderer.entity.RenderCow;
 //import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 
