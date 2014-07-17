@@ -24,22 +24,20 @@ https://github.com/daveyliam/mapwriter
 Development Environment
 ————————————————————————————————————
 
+mobs mod, which contains some customized entities.
+
 mymod mod, which contains our mod specific items we have now and in the future.
 
 Giantitem mod, which makes items giant. //Contains junit test cases for this mod.
 
-Timer mod, which limits player's time usage to reach the top of the mountain.
+Timer mod, which limits player's time usage to reach the top of the mountain. //still working on this. <_<
 
 Folder Info
 —————————————————————————————————————
 
 test folder, which contains all junit test file for our project.
 
-mobs folder, which contains NPCs we will create in the future.
-
-texture folder, which contains NPCs’ images that we want to make it look like.
-
-assets folder, which includes our modItems mods' textures,e.g. blocks, items, etc.
+assets folder, which includes our mods' textures,e.g. blocks, items, entities, etc.
 
 Ant file is located in /build.xml
 
