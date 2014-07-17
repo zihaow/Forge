@@ -14,21 +14,11 @@ import cpw.mods.fml.common.registry.GameRegistry;
 @Mod(modid="mobs",version="1.0a")
 
 /**
-<<<<<<< HEAD
  * This is the main class for mobs mod.
  * @author Zihao Wu
  */
 
 public class mobs {
-=======
- * Mobs is the main class of entities.
- * @author: Zihao Wu, Xuefei Yang.
-*/
-
-public class Mobs {
-	
-	public static final String modId = "mob";
->>>>>>> FETCH_HEAD
 	
 	public static final String modId = "mobs";
 	
