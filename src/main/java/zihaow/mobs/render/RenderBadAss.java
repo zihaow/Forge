@@ -2,7 +2,7 @@ package zihaow.mobs.render;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import zihaow.mobs.mobs;
+import zihaow.mobs.Mobs;
 import zihaow.mobs.entity.BadAss;
 import zihaow.mobs.entity.CrazyCow;
 import zihaow.mobs.model.ModelBadAss;
@@ -24,7 +24,7 @@ import net.minecraft.util.ResourceLocation;
 @SideOnly(Side.CLIENT)
 public class RenderBadAss extends RenderZombie {
 	
-	private static final ResourceLocation badAssTextures = new ResourceLocation(mobs.modId + ":" + "textures/model/BadAss.png");
+	private static final ResourceLocation badAssTextures = new ResourceLocation(Mobs.modId + ":" + "textures/model/BadAss.png");
 	protected ModelBadAss baentity;
 	
 	public RenderBadAss(){
