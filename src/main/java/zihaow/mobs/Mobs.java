@@ -1,5 +1,6 @@
 package zihaow.mobs;
 
+import zihaow.mobs.entity.BadAss;
 import zihaow.mobs.entity.CrazyCow;
 import zihaow.mobs.entity.Wolverine;
 import zihaow.mobs.handler.EntityHandler;
@@ -12,13 +13,17 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid="mobs",version="1.0a")
 
-public class Mobs {
+/**
+ * This is the main class for mobs mod.
+ * @author Zihao Wu
+ */
+
+public class mobs {
 	
-	public static final String modId = "mob";
-	
+	public static final String modId = "mobs";
 	
 	@Instance("mobs")
-	public static Mobs instance;
+	public static mobs instance;
 	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event){
@@ -29,9 +34,10 @@ public class Mobs {
 	public void init(FMLInitializationEvent event){
 		
 		//entities
-		EntityHandler.registerEntities(CrazyCow.class, "CrazyCow0");
+		EntityHandler.registerEntities(CrazyCow.class, "CrazyCow");
 		EntityHandler.registerMonster(Wolverine.class, "Wolverine");
-		EntityHandler.registerFriendly(CrazyCow.class, "CrazyCow");
+		//EntityHandler.registerFriendly(CrazyCow.class, "CrazyCow");
+		EntityHandler.registerMonster(BadAss.class, "BadAss");
 	}
 	
 	@Mod.EventHandler
