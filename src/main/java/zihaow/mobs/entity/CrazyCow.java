@@ -8,7 +8,7 @@ import net.minecraft.world.World;
 
 /**
  The cow class has a cow's basic features. 
-  @author: Zihao Wu.
+  @author: Zihao Wu, Xuefei Yang.
   version = "1.0a". 
 */
 

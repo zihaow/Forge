@@ -13,6 +13,7 @@ import zihaow.mobs.Mobs;
 import zihaow.mobs.entity.Wolverine;
 import zihaow.mobs.model.ModelWolverine;
 
+
 /**
  * The rendercow class render the wolverine.
  * @author: Zihao Wu.

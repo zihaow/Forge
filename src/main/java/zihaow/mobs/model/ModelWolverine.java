@@ -16,7 +16,7 @@ import net.minecraft.util.MathHelper;
 
 public class ModelWolverine extends ModelQuadruped{
 	
-	public ModelRenderer head = new ModelRenderer(this, 0, 0);
+    public ModelRenderer head = new ModelRenderer(this, 0, 0);
     public ModelRenderer body;
     public ModelRenderer leg1;
     public ModelRenderer leg2;
