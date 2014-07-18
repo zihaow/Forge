@@ -18,12 +18,12 @@ import cpw.mods.fml.common.registry.GameRegistry;
  * @author Zihao Wu
  */
 
-public class mobs {
+public class Mobs {
 	
 	public static final String modId = "mobs";
 	
 	@Instance("mobs")
-	public static mobs instance;
+	public static Mobs instance;
 	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event){

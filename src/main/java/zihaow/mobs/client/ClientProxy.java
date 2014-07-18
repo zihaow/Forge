@@ -12,11 +12,8 @@ import zihaow.mobs.render.RenderBadAss;
 import zihaow.mobs.render.RenderCrazyCow;
 import zihaow.mobs.render.RenderWolverine;
 import zihaow.mobs.common.CommonProxy;
-<<<<<<< HEAD
 import zihaow.mobs.entity.BadAss;
 import zihaow.mobs.entity.CrazyCow;
-=======
->>>>>>> FETCH_HEAD
 import zihaow.mobs.entity.Wolverine;
 import zihaow.mobs.entity.CrazyCow;
 
