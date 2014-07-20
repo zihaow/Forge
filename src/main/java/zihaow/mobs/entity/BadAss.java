@@ -48,7 +48,9 @@ public class BadAss extends EntityMob {
 		this.setSize(1.6F, 2.8F);
 	}
 
-	//to apply bad ass's attribute
+	/**
+	 * to apply bad ass's attributes.
+	 */
 	protected void applyEntityAttributes(){
 		super.applyEntityAttributes();
 		this.getEntityAttribute(SharedMonsterAttributes.followRange).setBaseValue(40.0D);
