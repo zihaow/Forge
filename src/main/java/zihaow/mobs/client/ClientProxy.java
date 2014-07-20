@@ -27,6 +27,7 @@ public class ClientProxy extends CommonProxy{
 		RenderingRegistry.registerEntityRenderingHandler(Wolverine.class, new RenderWolverine(new ModelWolverine(1, 0.3F),new ModelWolverine(2, 0.4F), 0.3F));
 		RenderingRegistry.registerEntityRenderingHandler(BadAss.class, new RenderBadAss());
 		//Wolverine.class, new RenderWolverine(new ModelWolverine(2, 0.4F), 0.3F)
+		RenderingRegistry.registerEntityRenderingHandler(Blu.class, new RenderBlu(new ModelBlu(), 1.2F));
 	
 	}
 }
