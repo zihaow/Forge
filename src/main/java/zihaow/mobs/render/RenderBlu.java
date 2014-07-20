@@ -20,7 +20,7 @@ import zihaow.mobs.model.ModelBlu;
 @SideOnly(Side.CLIENT)
 public class RenderBlu extends RenderLiving{
 	
-	protected ModelBlu modelEntity;
+        protected ModelBlu modelEntity;
 	
 	/**
 	 * Constructor
