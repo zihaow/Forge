@@ -12,15 +12,14 @@ import net.minecraft.world.World;
   version = "1.0a". 
 */
 
-public class CrazyCow extends EntityLiving
-{
-	ResourceLocation cowTextures;
+public class CrazyCow extends EntityLiving {
+    ResourceLocation cowTextures;
 	
-	/**
-	 * Constructor to set the cow.
-	 * @param world
-	 * @param cowTextures
-	 */
+    /**
+     * Constructor to set the cow. 
+     * @param world
+     * @param cowTextures
+     */
     public CrazyCow(World world){
         super(world);
         cowTextures = new ResourceLocation("textures/CrazyCow.png");
