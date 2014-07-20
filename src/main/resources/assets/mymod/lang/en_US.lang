@@ -1,4 +1,13 @@
 itemGroup.mymod=mymod
 
 tile.PowerfulBlock.name=Powerful Block
+
 item.PowerfulSword.name=Powerful Sword
+
+entity.BadAss.name=Bad Ass
+
+entity.CrazyCow.name=Crazy Cow
+
+entity.Wolverine.name=Wolverine
+
+entity.Blu.name=Blu
