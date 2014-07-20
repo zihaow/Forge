@@ -19,26 +19,15 @@ import zihaow.mobs.model.ModelCrazyCow;
 
 public class RenderCrazyCow extends RenderLiving{
 	
-    /**
-    public RenderCow(ModelBase modelbase, float f){
-        super(modelbase, f);
-    }
-
-    public void doRenderLiving(EntityLiving entityliving, 
-    double d, double d1, double d2, float f, float f1){
-        super.doRender((EntityCow)entityliving, d, d1, d2, f, f1);
-    }
-
-    public void doRender(Entity entity, double d, double d1, 
-    double d2, float f, float f1){
-        doRenderLiving((EntityCow)entity, d, d1, d2, f, f1);
-    }
-    */
-    
     private static final ResourceLocation texture = new ResourceLocation(Mobs.modId+":"+"textures/model/Cow.png");
 	
 	protected ModelCrazyCow modelEntity;
 	
+	/**
+	 * Constructor
+	 * @param par1ModelBase.
+	 * @param par2.
+	 */
 	public RenderCrazyCow(ModelBase par1ModelBase, float par2){
 		super(par1ModelBase, par2);
 		modelEntity = ((ModelCrazyCow) mainModel);
@@ -50,14 +39,14 @@ public class RenderCrazyCow extends RenderLiving{
 	
 	public void doRenderLiving(EntityLiving entityliving, double x, double y, double z, float u, float v){
 		super.doRender((CrazyCow)entityliving, x, y, z, u, v);
-    }
+        }
 
-    public void doRender(Entity entity, double x, double y, double z, float u, float v){
+        public void doRender(Entity entity, double x, double y, double z, float u, float v){
 		doRenderLiving((CrazyCow)entity, x, y, z, u, v);
-    }
+        }
     
-    @Override
-    protected ResourceLocation getEntityTexture(Entity e1){
-    	return texture;
-    }
+        @Override
+        protected ResourceLocation getEntityTexture(Entity e1){
+    		return texture;
+        }
 }
