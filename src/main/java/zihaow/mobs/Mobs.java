@@ -3,6 +3,7 @@ package zihaow.mobs;
 import zihaow.mobs.entity.BadAss;
 import zihaow.mobs.entity.CrazyCow;
 import zihaow.mobs.entity.Wolverine;
+import zihaow.mobs.entity.Blu;
 import zihaow.mobs.handler.EntityHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Instance;
