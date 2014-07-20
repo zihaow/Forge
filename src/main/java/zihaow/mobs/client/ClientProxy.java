@@ -8,14 +8,17 @@ import net.minecraft.entity.passive.EntityCow;
 import zihaow.mobs.model.ModelBadAss;
 import zihaow.mobs.model.ModelCrazyCow;
 import zihaow.mobs.model.ModelWolverine;
+import zihaow.mobs.model.ModelBlu;
 import zihaow.mobs.render.RenderBadAss;
 import zihaow.mobs.render.RenderCrazyCow;
 import zihaow.mobs.render.RenderWolverine;
+import zihaow.mobs.render.RenderBlu;
 import zihaow.mobs.common.CommonProxy;
 import zihaow.mobs.entity.BadAss;
 import zihaow.mobs.entity.CrazyCow;
 import zihaow.mobs.entity.Wolverine;
 import zihaow.mobs.entity.CrazyCow;
+import zihaow.mobs.entity.Blu;
 
 public class ClientProxy extends CommonProxy{
 
@@ -27,6 +30,7 @@ public class ClientProxy extends CommonProxy{
 		RenderingRegistry.registerEntityRenderingHandler(Wolverine.class, new RenderWolverine(new ModelWolverine(1, 0.3F),new ModelWolverine(2, 0.4F), 0.3F));
 		RenderingRegistry.registerEntityRenderingHandler(BadAss.class, new RenderBadAss());
 		//Wolverine.class, new RenderWolverine(new ModelWolverine(2, 0.4F), 0.3F)
+		RenderingRegistry.registerEntityRenderingHandler(Blu.class, new RenderBlu(new ModelBlu(), 1.2F));
 	
 	}
 }

@@ -3,13 +3,13 @@ CSCI 3130 Group 7
 Installation
 —————————————————————————————————————
 
-Only /src, /eclipse, /assets under /src/main/java/resource folders are necessary for our Minecraft Forge.
+Only /src, /eclipse folders are necessary for our Minecraft Forge.
 
-So simply copy these folders to a installed Minecraft Forge then it can be run successfully.
+Please copy /src folders to your Minecraft Forge folder and replace the original one and MERGE /eclipse folder with /eclipse folder in the Forge, then it can be run successfully.
+
+Please copy all .ogg files to /eclipse/assets/sounds/mob/zombie and copy sounds.json to /eclipse/assets. These file will be used for NPC’s sound.
 
 If eclipse cannot open the project, Just run “./gradlew eclipse” and then the problem will be solved.
-
-Sometimes eclipse will show some error messages when we try to run the program, just ignore the error message and click “Proceed” bottom. The program can running very well.
 
 
 External Resources
