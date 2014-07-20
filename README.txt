@@ -7,7 +7,7 @@ Only /src, /eclipse folders are necessary for our Minecraft Forge.
 
 Please copy /src folders to your Minecraft Forge folder and replace the original one and MERGE /eclipse folder with /eclipse folder in the Forge, then it can be run successfully.
 
-Please copy all .ogg files to /eclipse/assets/sounds/mob/zombie and copy sounds.json to /eclipse/assets. These file will be used for NPC’s sound.
+Please copy .ogg files to coresponding /eclipse/assets/sounds/mob/ (blu to pig, badAss to zombie) and copy sounds.json to /eclipse/assets. These file will be used for NPC’s sound.
 
 If eclipse cannot open the project, Just run “./gradlew eclipse” and then the problem will be solved.
 
