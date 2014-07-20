@@ -844,9 +844,10 @@
   "mob.pig.say": {
     "category": "neutral",
     "sounds": [
-      "mob/pig/say1",
       "mob/pig/say2",
-      "mob/pig/say3"
+      "mob/pig/dont_hurt_me",
+      "mob/pig/i_know_what_you_are_here",
+      "mob/pig/secret"
     ]
   },
   "mob.pig.step": {
