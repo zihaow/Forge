@@ -38,6 +38,7 @@ public class Mobs {
 		EntityHandler.registerMonster(Wolverine.class, "Wolverine");
 		//EntityHandler.registerFriendly(CrazyCow.class, "CrazyCow");
 		EntityHandler.registerMonster(BadAss.class, "BadAss");
+		EntityHandler.registerFriendly(Blu.class, "Blu");
 	}
 	
 	@Mod.EventHandler
