@@ -20,18 +20,18 @@ import net.minecraft.world.World;
   */	 
 
 	 public class mysword extends ItemSword{
-		private float field_150934_a;
-	    private final Item.ToolMaterial field_150933_b;
+	 private float field_150934_a;
+	 private final Item.ToolMaterial field_150933_b;
 	    
 	 /**
-	 Constructor to set the feature of this powerful sword.
+	  * Constructor to set the feature of this powerful sword.
+	  * @param: ToolMaterial.GOLD.
 	 */
 	 public mysword(Item.ToolMaterial p_i45356_1_){
 		 super(ToolMaterial.GOLD);
 		 this.field_150933_b = p_i45356_1_;
 	     	 this.maxStackSize = 2;
 	         this.setMaxDamage(1500);
-	         //this.setCreativeTab(CreativeTabs.tabCombat);
 	         this.field_150934_a = 12.0F + p_i45356_1_.getDamageVsEntity();
 	         this.setCreativeTab(mymod.zihaowTab);
 	 }
