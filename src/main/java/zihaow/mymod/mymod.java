@@ -25,12 +25,7 @@ import zihaow.mymod.items.mysword;
 
 public class mymod{
 	
-	
-	
-	//@SidedProxy(clientSide="Group7.modItems.client.ClientProxy",serverSide="Group7.modItems.common.CommonProxy")
-	
 	public static final String modid = "mymod";
-	//public static CommonProxy proxy;
 	public static Block blockpowerfulBlock;
 	public static Item itempowerfulSword;
 	public static CreativeTabs zihaowTab;
@@ -53,13 +48,7 @@ public class mymod{
 	}
 	
 	@Mod.EventHandler
-	public void init(FMLInitializationEvent event){
-		
-		//PowerfulBlock = new BlockPowerfulBlock(8000).setBlockName("PowerfulBlock").setBlockTextureName("modItems"+":PowerfulBlock");
-		//GameRegistry.registerBlock(PowerfulBlock, "PowerfulBlock");
-		
-	}
-	
+	public void init(FMLInitializationEvent event){}
 	
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event){
