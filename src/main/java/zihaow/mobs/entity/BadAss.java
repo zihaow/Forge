@@ -63,18 +63,19 @@ public class BadAss extends EntityMob {
 		return true;
 	}
 
+	//to make sound system working
 	protected String getLivingSound()
 	{
 		return "mob.zombie.say";
 	}
 
-
+	// hurt sound working
 	protected String getHurtSound()
 	{
 		return "mob.zombie.hurt";
 	}
 
-
+	//death sound working
 	protected String getDeathSound()
 	{
 		return "mob.BadAss-death";
