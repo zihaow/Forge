@@ -14,6 +14,10 @@ import cpw.mods.fml.common.registry.EntityRegistry;
 
 public class EntityHandler{
 	
+	/**
+	 * @param entityClass
+	 * @param name
+	 */
 	public static void registerEntities(Class entityClass, String name){
 		int entityId = EntityRegistry.findGlobalUniqueEntityId();
 		long i = name.hashCode();
@@ -26,6 +30,10 @@ public class EntityHandler{
 		EntityList.entityEggs.put(Integer.valueOf(entityId), new EntityList.EntityEggInfo(entityId, mainColor, subColor));
 	}
 	
+	/**
+	 * @param entityClass
+	 * @param name
+	 */
 	public static void registerMonster(Class entityClass, String name){
 		int entityId = EntityRegistry.findGlobalUniqueEntityId();
 		long i = name.hashCode();
@@ -39,6 +47,10 @@ public class EntityHandler{
 		EntityList.entityEggs.put(Integer.valueOf(entityId), new EntityList.EntityEggInfo(entityId, mainColor, subColor));
 	}
 	
+	/**
+	 * @param entityClass
+	 * @param name
+	 */
 	public static void registerFriendly(Class entityClass, String name){
 		int entityId = EntityRegistry.findGlobalUniqueEntityId();
 		long i = name.hashCode();
