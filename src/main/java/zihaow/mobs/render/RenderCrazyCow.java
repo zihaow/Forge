@@ -12,24 +12,24 @@ import zihaow.mobs.model.ModelCrazyCow;
 
 
 /**
- The rendercow class render the cow.
- @author: Zihao Wu.
- Version ="1.0".
+ * The rendercow class render the cow.
+ * @author: Zihao Wu.
+ * Version ="1.0a".
 */
 
 public class RenderCrazyCow extends RenderLiving{
 	
-    private static final ResourceLocation texture = new ResourceLocation(Mobs.modId+":"+"textures/model/Cow.png");
+        private static final ResourceLocation texture = new ResourceLocation(Mobs.modId+":"+"textures/model/Cow.png");
 	
 	protected ModelCrazyCow modelEntity;
 	
 	/**
 	 * Constructor
-	 * @param par1ModelBase.
-	 * @param par2.
+	 * @param modelBase.
+	 * @param f2.
 	 */
-	public RenderCrazyCow(ModelBase par1ModelBase, float par2){
-		super(par1ModelBase, par2);
+	public RenderCrazyCow(ModelBase modelBase, float f2){
+		super(modelBase, f2);
 		modelEntity = ((ModelCrazyCow) mainModel);
 	}
 	
