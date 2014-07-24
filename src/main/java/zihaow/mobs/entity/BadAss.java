@@ -26,7 +26,7 @@ import net.minecraftforge.common.ForgeModContainer;
  * @author Zihao Wu.
  */
 
-public class BadAss extends EntityMob {
+public class BadAss extends EntityZombie {
 
 	/**
 	 * Constructor to initialize the bad ass.
@@ -54,7 +54,7 @@ public class BadAss extends EntityMob {
 	protected void applyEntityAttributes(){
 		super.applyEntityAttributes();
 		this.getEntityAttribute(SharedMonsterAttributes.followRange).setBaseValue(40.0D);
-		this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(2.2D);
+		this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.01D);
 		this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(6.0D);
 	}
 
@@ -88,7 +88,7 @@ public class BadAss extends EntityMob {
 
 	protected Item getDropItem()
 	{
-		return Items.bone;
+		return Items.apple;
 	}
 
 	public EnumCreatureAttribute getCreatureAttribute()
