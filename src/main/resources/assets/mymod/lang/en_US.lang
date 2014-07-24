@@ -2,6 +2,16 @@ itemGroup.mymod=mymod
 
 tile.PowerfulBlock.name=Powerful Block
 
+tile.F.name=F
+
+tile.I.name=I
+
+tile.N.name=N
+
+tile.S.name=S
+
+tile.H.name=H
+
 item.PowerfulSword.name=Powerful Sword
 
 entity.BadAss.name=Bad Ass

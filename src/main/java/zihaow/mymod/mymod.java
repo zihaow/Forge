@@ -13,6 +13,11 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import zihaow.mymod.blocks.myblock;
+import zihaow.mymod.blocks.myblock_f;
+import zihaow.mymod.blocks.myblock_h;
+import zihaow.mymod.blocks.myblock_i;
+import zihaow.mymod.blocks.myblock_n;
+import zihaow.mymod.blocks.myblock_s;
 import zihaow.mymod.items.mysword;
 
 
@@ -27,6 +32,11 @@ public class mymod{
 	
 	public static final String modid = "mymod";
 	public static Block blockpowerfulBlock;
+	public static Block Word_F;
+	public static Block Word_I;
+	public static Block Word_N;
+	public static Block Word_S;
+	public static Block Word_H;
 	public static Item itempowerfulSword;
 	public static CreativeTabs zihaowTab;
 	
@@ -42,6 +52,16 @@ public class mymod{
 		
 		blockpowerfulBlock = new myblock(Material.glass).setBlockName("PowerfulBlock");
 		GameRegistry.registerBlock(blockpowerfulBlock, "PowerfulBlock");
+		Word_F = new myblock_f(Material.glass).setBlockName("F");
+		GameRegistry.registerBlock(Word_F, "F");
+		Word_I = new myblock_i(Material.glass).setBlockName("I");
+		GameRegistry.registerBlock(Word_I, "I");
+		Word_N = new myblock_n(Material.glass).setBlockName("N");
+		GameRegistry.registerBlock(Word_N, "N");
+		Word_S = new myblock_s(Material.glass).setBlockName("S");
+		GameRegistry.registerBlock(Word_S, "S");
+		Word_H = new myblock_h(Material.glass).setBlockName("H");
+		GameRegistry.registerBlock(Word_H, "H");
 		
 		itempowerfulSword = new mysword(ToolMaterial.GOLD).setUnlocalizedName("PowerfulSword");
 		GameRegistry.registerItem(itempowerfulSword,"PowerfulSword");
