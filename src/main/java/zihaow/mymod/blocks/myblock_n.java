@@ -1,7 +1,7 @@
 package zihaow.mymod.blocks;
 
-import zihaow.mymod.mymod;
 
+import zihaow.mymod.mymod;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -9,17 +9,18 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 
-	/**
-	@author: Zihao Wu, Xuefei Yang, 
-		     James MacNeil, Yuanjing Lin,
-		     Alireza Afkari.
-	 */	
+/**
+ * @author: Zihao Wu, Xuefei Yang, 
+ */	
 
-public class myblock extends Block{
+public class myblock_n extends Block{
 	
-	//public static final String MODID = "modItems";
 	
-	public myblock(Material glass){
+	/**
+	 * Constructor
+	 * @param: glass
+	 */
+	public myblock_n(Material glass){
 		super(glass);
 		this.setCreativeTab(mymod.zihaowTab);
 		
@@ -29,7 +30,7 @@ public class myblock extends Block{
 		this.setHardness(20.0F);
 		this.setResistance(30.0F);
 		this.setLightLevel(5.0F);
-		this.setBlockTextureName("mymod"+":PowerfulBlock");
+		this.setBlockTextureName("mymod"+":N");
 	}
 	
 	@SideOnly(Side.CLIENT)

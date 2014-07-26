@@ -12,7 +12,16 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import zihaow.mymod.blocks.blockP1;
+import zihaow.mymod.blocks.blockP2;
+import zihaow.mymod.blocks.blockP3;
+import zihaow.mymod.blocks.blockP4;
 import zihaow.mymod.blocks.myblock;
+import zihaow.mymod.blocks.myblock_f;
+import zihaow.mymod.blocks.myblock_h;
+import zihaow.mymod.blocks.myblock_i;
+import zihaow.mymod.blocks.myblock_n;
+import zihaow.mymod.blocks.myblock_s;
 import zihaow.mymod.items.mysword;
 
 
@@ -25,13 +34,17 @@ import zihaow.mymod.items.mysword;
 
 public class mymod{
 	
-	
-	
-	//@SidedProxy(clientSide="Group7.modItems.client.ClientProxy",serverSide="Group7.modItems.common.CommonProxy")
-	
 	public static final String modid = "mymod";
-	//public static CommonProxy proxy;
 	public static Block blockpowerfulBlock;
+	public static Block Word_F;
+	public static Block Word_I;
+	public static Block Word_N;
+	public static Block Word_S;
+	public static Block Word_H;
+	public static Block part1;
+	public static Block part2;
+	public static Block part3;
+	public static Block part4;
 	public static Item itempowerfulSword;
 	public static CreativeTabs zihaowTab;
 	
@@ -47,19 +60,32 @@ public class mymod{
 		
 		blockpowerfulBlock = new myblock(Material.glass).setBlockName("PowerfulBlock");
 		GameRegistry.registerBlock(blockpowerfulBlock, "PowerfulBlock");
+		Word_F = new myblock_f(Material.glass).setBlockName("F");
+		GameRegistry.registerBlock(Word_F, "F");
+		Word_I = new myblock_i(Material.glass).setBlockName("I");
+		GameRegistry.registerBlock(Word_I, "I");
+		Word_N = new myblock_n(Material.glass).setBlockName("N");
+		GameRegistry.registerBlock(Word_N, "N");
+		Word_S = new myblock_s(Material.glass).setBlockName("S");
+		GameRegistry.registerBlock(Word_S, "S");
+		Word_H = new myblock_h(Material.glass).setBlockName("H");
+		GameRegistry.registerBlock(Word_H, "H");
+		
+		part1 = new blockP1(Material.glass).setBlockName("Part1");
+		GameRegistry.registerBlock(part1,"Part1");
+		part2 = new blockP2(Material.glass).setBlockName("Part2");
+		GameRegistry.registerBlock(part2,"Part2");
+		part3 = new blockP3(Material.glass).setBlockName("Part3");
+		GameRegistry.registerBlock(part3,"Part3");
+		part4 = new blockP4(Material.glass).setBlockName("Part4");
+		GameRegistry.registerBlock(part4,"Part4");
 		
 		itempowerfulSword = new mysword(ToolMaterial.GOLD).setUnlocalizedName("PowerfulSword");
 		GameRegistry.registerItem(itempowerfulSword,"PowerfulSword");
 	}
 	
 	@Mod.EventHandler
-	public void init(FMLInitializationEvent event){
-		
-		//PowerfulBlock = new BlockPowerfulBlock(8000).setBlockName("PowerfulBlock").setBlockTextureName("modItems"+":PowerfulBlock");
-		//GameRegistry.registerBlock(PowerfulBlock, "PowerfulBlock");
-		
-	}
-	
+	public void init(FMLInitializationEvent event){}
 	
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event){
