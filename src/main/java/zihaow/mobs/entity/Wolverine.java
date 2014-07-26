@@ -31,67 +31,67 @@ import net.minecraft.world.World;
 
 public class Wolverine extends EntityWolf{
 
-	//ResourceLocation cowTextures;
-	
-	public Wolverine(World par1World){
-		super(par1World);
-        this.setSize(1.0F, 1.2F);
-        //wolverineTextures = new ResourceLocation("textures.wolverine.png");
-        this.getNavigator().setAvoidsWater(false);
-        this.tasks.addTask(1, new EntityAISwimming(this));
-        this.tasks.addTask(2, this.aiSit);
-        this.tasks.addTask(3, new EntityAILeapAtTarget(this, 1.2F));
-        this.tasks.addTask(4, new EntityAIAttackOnCollide(this, 2.0D, true));
-        this.tasks.addTask(5, new EntityAIFollowOwner(this, 1.0D, 10.0F, 2.0F));
-        this.tasks.addTask(6, new EntityAIMate(this, 1.0D));
-        this.tasks.addTask(7, new EntityAIWander(this, 1.0D));
-        this.tasks.addTask(8, new EntityAIBeg(this, 8.0F));
-        this.tasks.addTask(9, new EntityAIWatchClosest(this, EntityPlayer.class, 3.0F));
-        this.tasks.addTask(9, new EntityAILookIdle(this));
-        this.targetTasks.addTask(1, new EntityAIOwnerHurtByTarget(this));
-        this.targetTasks.addTask(2, new EntityAIOwnerHurtTarget(this));
-        this.targetTasks.addTask(3, new EntityAIHurtByTarget(this, true));
-        this.targetTasks.addTask(4, new EntityAITargetNonTamed(this, EntitySheep.class, 250, false));
-        this.setTamed(false);
+	/**
+	 * Constructor
+	 * @param world.
+	 */
+	public Wolverine(World world) {
+		super(world);
+        	this.setSize(1.0F, 1.2F);
+        	this.getNavigator().setAvoidsWater(false);
+        	this.tasks.addTask(1, new EntityAISwimming(this));
+        	this.tasks.addTask(2, this.aiSit);
+        	this.tasks.addTask(3, new EntityAILeapAtTarget(this, 1.2F));
+        	this.tasks.addTask(4, new EntityAIAttackOnCollide(this, 2.0D, true));
+        	this.tasks.addTask(5, new EntityAIFollowOwner(this, 1.0D, 10.0F, 2.0F));
+        	this.tasks.addTask(6, new EntityAIMate(this, 1.0D));
+        	this.tasks.addTask(7, new EntityAIWander(this, 1.0D));
+        	this.tasks.addTask(8, new EntityAIBeg(this, 8.0F));
+        	this.tasks.addTask(9, new EntityAIWatchClosest(this, EntityPlayer.class, 3.0F));
+        	this.tasks.addTask(9, new EntityAILookIdle(this));
+        	this.targetTasks.addTask(1, new EntityAIOwnerHurtByTarget(this));
+        	this.targetTasks.addTask(2, new EntityAIOwnerHurtTarget(this));
+        	this.targetTasks.addTask(3, new EntityAIHurtByTarget(this, true));
+        	this.targetTasks.addTask(4, new EntityAITargetNonTamed(this, EntitySheep.class, 250, false));
+        	this.setTamed(false);
 	}
 	
-    protected void applyEntityArrtibute(){
-	super.applyEntityAttributes();
-	this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(30.0D);
-	this.getEntityAttribute(SharedMonsterAttributes.followRange).setBaseValue(50.0D);
-	this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(8.0D);
-	this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(6.7);
-    }
+        protected void applyEntityArrtibute(){
+ 		super.applyEntityAttributes();
+		this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(30.0D);
+		this.getEntityAttribute(SharedMonsterAttributes.followRange).setBaseValue(50.0D);
+		this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(8.0D);
+		this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(6.7);
+    	}
 	
-    /**
-     *To make the wolverine very aggressive. 
-     */
-    @Override
-    public void setAttackTarget(EntityLivingBase par1EntityLivingBase){
-        super.setAttackTarget(par1EntityLivingBase);
-        if (par1EntityLivingBase == null){
-            this.setAngry(true);
-        }
-        else if (!this.isTamed()){
-            this.setAngry(true);
-        }
-    }
+        /**
+         *To make the wolverine very aggressive. 
+        */
+    	@Override
+    	public void setAttackTarget(EntityLivingBase par1EntityLivingBase){
+        	super.setAttackTarget(par1EntityLivingBase);
+        	if (par1EntityLivingBase == null){
+            	this.setAngry(true);
+        	}
+        	else if (!this.isTamed()){
+            		this.setAngry(true);
+        	}
+    	}
     
-    protected String getLivingSound(){
-        return this.isAngry() ? "textures.wolverine.growl" : (this.rand.nextInt(3) == 0 ? (this.isTamed() && this.dataWatcher.getWatchableObjectFloat(18) < 10.0F ? "textures.wolverine.whine" : "textures.wolverine.panting") : "textures.wolverine.bark");
-    }
+    	protected String getLivingSound(){
+        	return this.isAngry() ? "textures.wolverine.growl" : (this.rand.nextInt(3) == 0 ? (this.isTamed() && this.dataWatcher.getWatchableObjectFloat(18) < 10.0F ? "textures.wolverine.whine" : "textures.wolverine.panting") : "textures.wolverine.bark");
+    	}
 
-    protected String getHurtSound(){
-        return "textures.wolverine.hurt";
-    }
-
-    protected String getDeathSound(){
-        return "textures.wolverine.death";
-    }
-
-    @Override
-    protected float getSoundVolume(){
-        return 0.8F;
-    }
-
+    	protected String getHurtSound(){
+        	return "textures.wolverine.hurt";
+    	}
+	
+    	protected String getDeathSound(){
+        	return "textures.wolverine.death";
+    	}
+	
+    	@Override
+	protected float getSoundVolume(){
+        	return 0.8F;
+    	}
 }

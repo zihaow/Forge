@@ -7,7 +7,7 @@ import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.util.ResourceLocation;
-import zihaow.mobs.mobs;
+import zihaow.mobs.Mobs;
 import zihaow.mobs.entity.Blu;
 import zihaow.mobs.model.ModelBlu;
 
@@ -24,11 +24,11 @@ public class RenderBlu extends RenderLiving{
 	
 	/**
 	 * Constructor
-	 * @param partModelBase
-	 * @param par2
+	 * @param modelBase
+	 * @param f2
 	 */
-	public RenderBlu(ModelBase par1ModelBase, float par2){
-		super(par1ModelBase, par2);
+	public RenderBlu(ModelBase modelBase, float f2){
+		super(modelBase, f2);
 		modelEntity = ((ModelBlu) mainModel);
 	}
 	

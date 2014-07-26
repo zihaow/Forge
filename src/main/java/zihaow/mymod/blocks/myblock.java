@@ -1,5 +1,6 @@
 package zihaow.mymod.blocks;
 
+
 import zihaow.mymod.mymod;
 
 import cpw.mods.fml.relauncher.Side;
@@ -17,8 +18,11 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class myblock extends Block{
 	
-	//public static final String MODID = "modItems";
 	
+	/**
+	 * Constructor
+	 * @param: galss.
+	 */
 	public myblock(Material glass){
 		super(glass);
 		this.setCreativeTab(mymod.zihaowTab);

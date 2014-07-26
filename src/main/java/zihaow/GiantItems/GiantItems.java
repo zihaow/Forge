@@ -25,7 +25,6 @@ public class GiantItems{
 	public static double Scale;
 
 	@Mod.EventHandler
-	//method to register items to be made giant
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		Configuration config = new Configuration(event.getSuggestedConfigurationFile());
@@ -36,7 +35,6 @@ public class GiantItems{
 	}
 	
 	@Mod.EventHandler
-	//method to register info.
 	public void load(FMLInitializationEvent event){
 		proxy.registerClientInformation();
 	}

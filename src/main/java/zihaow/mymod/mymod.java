@@ -41,10 +41,13 @@ public class mymod{
 	public static Block Word_N;
 	public static Block Word_S;
 	public static Block Word_H;
+<<<<<<< HEAD
 	public static Block part1;
 	public static Block part2;
 	public static Block part3;
 	public static Block part4;
+=======
+>>>>>>> FETCH_HEAD
 	public static Item itempowerfulSword;
 	public static CreativeTabs zihaowTab;
 	
@@ -70,6 +73,7 @@ public class mymod{
 		GameRegistry.registerBlock(Word_S, "S");
 		Word_H = new myblock_h(Material.glass).setBlockName("H");
 		GameRegistry.registerBlock(Word_H, "H");
+<<<<<<< HEAD
 		
 		part1 = new blockP1(Material.glass).setBlockName("Part1");
 		GameRegistry.registerBlock(part1,"Part1");
@@ -79,6 +83,8 @@ public class mymod{
 		GameRegistry.registerBlock(part3,"Part3");
 		part4 = new blockP4(Material.glass).setBlockName("Part4");
 		GameRegistry.registerBlock(part4,"Part4");
+=======
+>>>>>>> FETCH_HEAD
 		
 		itempowerfulSword = new mysword(ToolMaterial.GOLD).setUnlocalizedName("PowerfulSword");
 		GameRegistry.registerItem(itempowerfulSword,"PowerfulSword");
