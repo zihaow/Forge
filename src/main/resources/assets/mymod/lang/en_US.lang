@@ -12,7 +12,7 @@ tile.S.name=S
 
 tile.H.name=H
 
-<<<<<<< HEAD
+
 tile.part1.name=Part1
 
 tile.part2.name=Part2
@@ -21,8 +21,7 @@ tile.part3.name=Part3
 
 tile.part4.name=Part4
 
-=======
->>>>>>> FETCH_HEAD
+
 item.PowerfulSword.name=Powerful Sword
 
 entity.BadAss.name=Bad Ass
