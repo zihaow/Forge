@@ -79,15 +79,15 @@ public class Wolverine extends EntityWolf{
     	}
     
     	protected String getLivingSound(){
-        	return this.isAngry() ? "textures.wolverine.growl" : (this.rand.nextInt(3) == 0 ? (this.isTamed() && this.dataWatcher.getWatchableObjectFloat(18) < 10.0F ? "textures.wolverine.whine" : "textures.wolverine.panting") : "textures.wolverine.bark");
+        	return this.isAngry() ? "mob.wolf.bark" : (this.rand.nextInt(3) == 0 ? (this.isTamed() && this.dataWatcher.getWatchableObjectFloat(18) < 10.0F ? "mob.wolf.whine" : "mob.wolf.panting") : "mob.wolf.bark");
     	}
 
     	protected String getHurtSound(){
-        	return "textures.wolverine.hurt";
+        	return "mob.wolf.hurt";
     	}
 	
     	protected String getDeathSound(){
-        	return "textures.wolverine.death";
+        	return "mob.wolf.death";
     	}
 	
     	@Override
