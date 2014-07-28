@@ -1084,8 +1084,7 @@
   "mob.wolf.bark": {
     "category": "neutral",
     "sounds": [
-      "mob/wolf/bark1",
-      "mob/wolf/bark2",
+      "mob/wolf/dont_want_to_seeyou”,
       "mob/wolf/bark3"
     ]
   },
@@ -1113,8 +1112,7 @@
   "mob.wolf.hurt": {
     "category": "neutral",
     "sounds": [
-      "mob/wolf/hurt1",
-      "mob/wolf/hurt2",
+      "mob/wolf/killyou”,
       "mob/wolf/hurt3"
     ]
   },
