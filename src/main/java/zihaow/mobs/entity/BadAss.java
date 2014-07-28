@@ -53,9 +53,10 @@ public class BadAss extends EntityZombie {
 	 */
 	protected void applyEntityAttributes(){
 		super.applyEntityAttributes();
-		this.getEntityAttribute(SharedMonsterAttributes.followRange).setBaseValue(40.0D);
+		this.getEntityAttribute(SharedMonsterAttributes.followRange).setBaseValue(10.0D);
 		this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.01D);
-		this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(6.0D);
+		this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(1.0D);
+		this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(5.0D);
 	}
 
 	//to enable AI.
