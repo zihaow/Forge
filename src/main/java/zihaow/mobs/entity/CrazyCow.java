@@ -35,15 +35,15 @@ public class CrazyCow extends EntityLiving {
     }
 
     protected String getLivingSound(){
-        return "textures.CrazyCow";
+        return "mob.cow.say";
     }
 
     protected String getHurtSound(){
-        return "textures.CrazyCow";
+        return "mob.cow.hurt";
     }
 
     protected String getDeathSound(){
-        return "textures.CrazyCow";
+        return "mob.cow.death";
     }
 
     protected float getSoundVolume(){

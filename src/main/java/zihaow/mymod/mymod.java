@@ -12,16 +12,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import zihaow.mymod.blocks.blockP1;
-import zihaow.mymod.blocks.blockP2;
-import zihaow.mymod.blocks.blockP3;
-import zihaow.mymod.blocks.blockP4;
-import zihaow.mymod.blocks.myblock;
-import zihaow.mymod.blocks.myblock_f;
-import zihaow.mymod.blocks.myblock_h;
-import zihaow.mymod.blocks.myblock_i;
-import zihaow.mymod.blocks.myblock_n;
-import zihaow.mymod.blocks.myblock_s;
+import zihaow.mymod.blocks.*;
 import zihaow.mymod.items.mysword;
 
 
@@ -41,13 +32,20 @@ public class mymod{
 	public static Block Word_N;
 	public static Block Word_S;
 	public static Block Word_H;
-<<<<<<< HEAD
 	public static Block part1;
 	public static Block part2;
 	public static Block part3;
 	public static Block part4;
-=======
->>>>>>> FETCH_HEAD
+	public static Block question_1x1;
+	public static Block question_1x2;
+	public static Block question_1x3;
+	public static Block question_1x4;
+	public static Block question_1x5;
+	public static Block question_2x1;
+	public static Block question_2x2;
+	public static Block question_2x3;
+	public static Block question_2x4;
+	public static Block question_2x5;
 	public static Item itempowerfulSword;
 	public static CreativeTabs zihaowTab;
 	
@@ -73,7 +71,6 @@ public class mymod{
 		GameRegistry.registerBlock(Word_S, "S");
 		Word_H = new myblock_h(Material.glass).setBlockName("H");
 		GameRegistry.registerBlock(Word_H, "H");
-<<<<<<< HEAD
 		
 		part1 = new blockP1(Material.glass).setBlockName("Part1");
 		GameRegistry.registerBlock(part1,"Part1");
@@ -83,8 +80,29 @@ public class mymod{
 		GameRegistry.registerBlock(part3,"Part3");
 		part4 = new blockP4(Material.glass).setBlockName("Part4");
 		GameRegistry.registerBlock(part4,"Part4");
-=======
->>>>>>> FETCH_HEAD
+		
+		question_1x1 = new question_1x1(Material.glass).setBlockName("question_1x1");
+		GameRegistry.registerBlock(question_1x1,"question_1x1");
+		question_1x2 = new question_1x2(Material.glass).setBlockName("question_1x2");
+		GameRegistry.registerBlock(question_1x2,"question_1x2");
+		question_1x3 = new question_1x3(Material.glass).setBlockName("question_1x3");
+		GameRegistry.registerBlock(question_1x3,"question_1x3");
+		question_1x4 = new question_1x4(Material.glass).setBlockName("question_1x4");
+		GameRegistry.registerBlock(question_1x4,"question_1x4");
+		question_1x5 = new question_1x5(Material.glass).setBlockName("question_1x5");
+		GameRegistry.registerBlock(question_1x5,"question_1x5");
+		
+		question_2x1 = new question_2x1(Material.glass).setBlockName("question_2x1");
+		GameRegistry.registerBlock(question_2x1,"question_2x1");
+		question_2x2 = new question_2x2(Material.glass).setBlockName("question_2x2");
+		GameRegistry.registerBlock(question_2x2,"question_2x2");
+		question_2x3 = new question_2x3(Material.glass).setBlockName("question_2x3");
+		GameRegistry.registerBlock(question_2x3,"question_2x3");
+		question_2x4 = new question_2x4(Material.glass).setBlockName("question_2x4");
+		GameRegistry.registerBlock(question_2x4,"question_2x4");
+		question_2x5 = new question_2x5(Material.glass).setBlockName("question_2x5");
+		GameRegistry.registerBlock(question_2x5,"question_2x5");
+
 		
 		itempowerfulSword = new mysword(ToolMaterial.GOLD).setUnlocalizedName("PowerfulSword");
 		GameRegistry.registerItem(itempowerfulSword,"PowerfulSword");
