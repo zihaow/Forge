@@ -1084,7 +1084,8 @@
   "mob.wolf.bark": {
     "category": "neutral",
     "sounds": [
-      "mob/wolf/dont_want_to_seeyou”,
+      "mob/wolf/bark1",
+      "mob/wolf/bark2",
       "mob/wolf/bark3"
     ]
   },
@@ -1097,7 +1098,7 @@
   "mob.wolf.growl": {
     "category": "neutral",
     "sounds": [
-      "mob/wolf/growl1",
+      "mob/wolf/dont_want_to_seeyou",
       "mob/wolf/growl2",
       "mob/wolf/growl3"
     ]
@@ -1105,15 +1106,16 @@
   "mob.wolf.howl": {
     "category": "neutral",
     "sounds": [
-      "mob/wolf/howl1",
+      "mob/wolf/dont_want_to_seeyou",
       "mob/wolf/howl2"
     ]
   },
   "mob.wolf.hurt": {
     "category": "neutral",
     "sounds": [
-      "mob/wolf/killyou”,
-      "mob/wolf/hurt3"
+      "mob/wolf/hurt1",
+      "mob/wolf/dont_want_to_seeyou",
+      "mob/wolf/killyou"
     ]
   },
   "mob.wolf.panting": {
