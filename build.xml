@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
-<!-- @author: Zihao Wu, Xuefei Yang -->
+<!-- Author: Zihao Wu, Xuefei Yang -->
 
 <project basedir="." default="build" name="Minecraft">
     <property environment="env"/>
     <property name="ECLIPSE_HOME" value="F:/Eclipse/eclipse"/>
     <property name="workspace_loc" value="eclipse"/>
+    <property name="junit.output.dir" value="junit"/>
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.6"/>
     <property name="source" value="1.6"/>
@@ -41,7 +42,7 @@
         <pathelement location="../../.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.0-beta9/1dd66e68cccd907880229f9e2de1314bd13ff785/log4j-api-2.0-beta9.jar"/>
         <pathelement location="../../.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.0-beta9/678861ba1b2e1fccb594bb0ca03114bb05da9695/log4j-core-2.0-beta9.jar"/>
         <pathelement location="../../.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl/2.9.0/5654d06e61a1bba7ae1e7f5233e1106be64c91cd/lwjgl-2.9.0.jar"/>
-        <pathelement location="../../.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl_util/2.9.0/a778846b64008fc7f48ead2377f034e547991699/ lwjgl_util-2.9.0.jar"/>
+        <pathelement location="../../.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl_util/2.9.0/a778846b64008fc7f48ead2377f034e547991699/lwjgl_util-2.9.0.jar"/>
         <pathelement location="../../.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.0/2ba5dcb11048147f1a74eff2deb192c001321f77/lwjgl-platform-2.9.0-natives-linux.jar"/>
         <pathelement location="../../.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.0/6621b382cb14cc409b041d8d72829156a87c31aa/lwjgl-platform-2.9.0-natives-osx.jar"/>
         <pathelement location="../../.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.0/3f11873dc8e84c854ec7c5a8fd2e869f8aaef764/lwjgl-platform-2.9.0-natives-windows.jar"/>
@@ -51,8 +52,7 @@
         <pathelement location="../../.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.10.2/444ff8e89a81697997ed8a98a4642ba283130249/scala-reflect-2.10.2.jar"/>
         <path refid="JUnit 4.libraryclasspath"/>
     </path>
-    
-	<target name="init">
+    <target name="init">
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
             <fileset dir="src/main/java">
@@ -65,30 +65,21 @@
             </fileset>
         </copy>
     </target>
-    
-	<target name="clean">
+    <target name="clean">
         <delete dir="bin"/>
     </target>
-    
-	<target depends="clean" name="cleanall"/>
-    
-	<target depends="build-subprojects,build-project" name="build"/>
-    
-	<target name="build-subprojects"/>
-    
-	<target depends="init" name="build-project">
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
         <echo message="${ant.project.name}: ${ant.file}"/>
-        
-    	<javac debug="true" debuglevel="${debuglevel}" destdir="bin" 
-            includeantruntime="false" source="${source}" target="${target}">
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
             <src path="src/main/java"/>
             <src path="src/main/resources"/>
             <classpath refid="Minecraft.classpath"/>
         </javac>
-   
     </target>
-    <target description="Build all projects which reference this project. 
-    	Useful to propagate changes." name="build-refprojects"/>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
     <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
         <copy todir="${ant.library.dir}">
             <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
@@ -98,25 +89,74 @@
             <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
         </unzip>
     </target>
-    
-	<target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    
-	<target name="Client">
+    <target name="AccessTransformer">
+        <java classname="cpw.mods.fml.common.asm.transformers.AccessTransformer" failonerror="true" fork="yes">
+            <classpath refid="Minecraft.classpath"/>
+        </java>
+    </target>
+    <target name="ASMifier">
+        <java classname="org.objectweb.asm.util.ASMifier" failonerror="true" fork="yes">
+            <classpath refid="Minecraft.classpath"/>
+        </java>
+    </target>
+    <target name="Client">
         <java classname="net.minecraft.launchwrapper.Launch" dir="${workspace_loc}" failonerror="true" fork="yes">
             <jvmarg line="-Xincgc -Xmx1024M -Xms1024M -Dfml.ignoreInvalidMinecraftCertificates=true"/>
             <arg line="--version 1.6 --tweakClass cpw.mods.fml.common.launcher.FMLTweaker --accessToken FML"/>
             <classpath refid="Minecraft.classpath"/>
         </java>
     </target>
-    
-	<target name="Server">
-        <java classname="cpw.mods.fml.relauncher.ServerLaunchWrapper" 
-        	  dir="${workspace_loc}" failonerror="true" fork="yes">
+    <target name="Main">
+        <java classname="net.minecraft.client.main.Main" failonerror="true" fork="yes">
+            <classpath refid="Minecraft.classpath"/>
+        </java>
+    </target>
+    <target name="MinecraftServer">
+        <java classname="net.minecraft.server.MinecraftServer" failonerror="true" fork="yes">
+            <classpath refid="Minecraft.classpath"/>
+        </java>
+    </target>
+    <target name="Server">
+        <java classname="cpw.mods.fml.relauncher.ServerLaunchWrapper" dir="${workspace_loc}" failonerror="true" fork="yes">
             <jvmarg line="-Xincgc -Xmx1024M -Xms1024M"/>
             <classpath refid="Minecraft.classpath"/>
         </java>
+    </target>
+    <target name="ZihaowCP">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="zihaow.GiantItems.Client.ZihaowCP" todir="${junit.output.dir}"/>
+            <classpath refid="Minecraft.classpath"/>
+        </junit>
+    </target>
+    <target name="ZihaowG">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="zihaow.GiantItems.ZihaowG" todir="${junit.output.dir}"/>
+            <classpath refid="Minecraft.classpath"/>
+        </junit>
+    </target>
+    <target name="ZihaowGR">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="zihaow.GiantItems.Client.ZihaowGR" todir="${junit.output.dir}"/>
+            <classpath refid="Minecraft.classpath"/>
+        </junit>
+    </target>
+
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
     </target>
 </project>
