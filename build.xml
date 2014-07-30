@@ -126,27 +126,27 @@
             <classpath refid="Minecraft.classpath"/>
         </java>
     </target>
-    <target name="ZihaowCP">
+    <target name="TestClientProxy">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
-            <test name="zihaow.GiantItems.Client.ZihaowCP" todir="${junit.output.dir}"/>
+            <test name="zihaow.GiantItems.Client.TestClientProxy" todir="${junit.output.dir}"/>
             <classpath refid="Minecraft.classpath"/>
         </junit>
     </target>
-    <target name="ZihaowG">
+    <target name="TestGiantItem">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
-            <test name="zihaow.GiantItems.ZihaowG" todir="${junit.output.dir}"/>
+            <test name="zihaow.GiantItems.TestGiantItem" todir="${junit.output.dir}"/>
             <classpath refid="Minecraft.classpath"/>
         </junit>
     </target>
-    <target name="ZihaowGR">
+    <target name="TestGiantItemRenderer">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
-            <test name="zihaow.GiantItems.Client.ZihaowGR" todir="${junit.output.dir}"/>
+            <test name="zihaow.GiantItems.Client.TestGiantItemRenderer" todir="${junit.output.dir}"/>
             <classpath refid="Minecraft.classpath"/>
         </junit>
     </target>
