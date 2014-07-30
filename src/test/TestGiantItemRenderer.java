@@ -19,7 +19,7 @@ import org.junit.Test;
  * @author Zihao Wu.
 */
 
-public class ZihaowGR{
+public class TestGiantItemRenderer{
 	
 	Minecraft mc;
 
