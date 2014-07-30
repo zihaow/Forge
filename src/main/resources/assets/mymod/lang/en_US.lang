@@ -12,6 +12,7 @@ tile.S.name=S
 
 tile.H.name=H
 
+
 tile.part1.name=Part1
 
 tile.part2.name=Part2
@@ -39,6 +40,46 @@ tile.question_part2x3=Question_Part2.3
 tile.question_part2x4=Question_Part2.4
 
 tile.question_part2x5=Question_Part2.5
+
+tile.question2_1=question2_1
+
+tile.question2_2=question2_2
+
+tile.question2_3=question2_3
+
+tile.question2_4=question2_4
+
+tile.question2_5=question2_5
+
+tile.question2_21=question2_21
+
+tile.question2_22=question2_22
+
+tile.question2_23=question2_23
+
+tile.question2_24=question2_24
+
+tile.question2_25=question2_25
+
+tile.question3_1=question3_1
+
+tile.question3_2=question3_2
+
+tile.question3_3=question3_3
+
+tile.question3_4=question3_4
+
+tile.question3_5=question3_5
+
+tile.question3_21=question3_21
+
+tile.question3_22=question3_22
+
+tile.question3_23=question3_23
+
+tile.question3_24=question3_24
+
+tile.question3_25=question3_25
 
 item.PowerfulSword.name=Powerful Sword
 
