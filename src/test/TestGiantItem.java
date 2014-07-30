@@ -16,7 +16,7 @@ import net.minecraftforge.common.config.Configuration;
  * @author: Zihao Wu.
 */
 
-public class ZihaowG {
+public class TestGiantItem {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception{

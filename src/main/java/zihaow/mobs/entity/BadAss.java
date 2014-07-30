@@ -91,4 +91,10 @@ public class BadAss extends EntityZombie {
 	{
 		return Items.apple;
 	}
+	
+	//make zombie undead
+	public EnumCreatureAttribute getCreatureAttribute()
+	{
+		return EnumCreatureAttribute.UNDEAD;
+	}
 }

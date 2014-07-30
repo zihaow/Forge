@@ -19,7 +19,7 @@ import net.minecraft.world.World;
  * @author: Zihao Wu.
 */
 
-public class ZihaowCP {
+public class TestGiantItemClientProxy {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception{
