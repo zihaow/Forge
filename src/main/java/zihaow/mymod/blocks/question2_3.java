@@ -13,14 +13,14 @@ import net.minecraft.creativetab.CreativeTabs;
  * @author: Zihao Wu, Xuefei Yang, 
  */	
 
-public class question_2x4 extends Block{
+public class question2_3 extends Block{
 	
 	
 	/**
 	 * Constructor
 	 * @param: glass
 	 */
-	public question_2x4(Material glass){
+	public question2_3(Material glass){
 		super(glass);
 		this.setCreativeTab(mymod.zihaowTab);
 		
@@ -30,7 +30,7 @@ public class question_2x4 extends Block{
 		this.setHardness(20.0F);
 		this.setResistance(30.0F);
 		this.setLightLevel(5.0F);
-		this.setBlockTextureName("mymod"+":question_part2x4");
+		this.setBlockTextureName("mymod"+":project-q1_part1x3");
 	}
 	
 	@SideOnly(Side.CLIENT)
