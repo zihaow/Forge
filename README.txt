@@ -28,8 +28,6 @@ mymod mod, which contains our mod specific items.
 
 Giantitem mod, which makes items giant. //Contains JUnit test cases.
 
-Timer mod, which limits player's time usage to reach the top of the mountain. //still working on this. <_<
-
 Folder Info
 —————————————————————————————————————
 test folder, which contains all JUnit test file for our project.
